@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/16885592/Desktop/Registrador/simulation/qsim
+vhard_block
+Z1 !s110 1756409349
+!i10b 1
+!s100 P?0[z`L:>IIcjYiJIPe8?3
+IVlo@gmPM3oDCoR=2N9H<Y0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1756409349
+Z4 8registrador.vo
+Z5 Fregistrador.vo
+L0 381
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1756409349.000000
+Z8 !s107 registrador.vo|
+Z9 !s90 -work|work|registrador.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vregistrador
+R1
+!i10b 1
+!s100 hQ`R:=6>ZYeVg?lcB2Yc:3
+I><gXILf@^@h1:jbMDo=]M3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vregistrador_vlg_vec_tst
+R1
+!i10b 1
+!s100 LmDmE?[zkY`1>aNbQUdX@2
+I>Q<zjChPh:SI40;gPanb_3
+R2
+R0
+w1756409348
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

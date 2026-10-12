@@ -1,0 +1,11 @@
+|multiplicador
+y0 <= <GND>
+y1 <= x0.DB_MAX_OUTPUT_PORT_TYPE
+x0 => y1.DATAIN
+y2 <= x1.DB_MAX_OUTPUT_PORT_TYPE
+x1 => y2.DATAIN
+y3 <= x2.DB_MAX_OUTPUT_PORT_TYPE
+x2 => y3.DATAIN
+x3 => ~NO_FANOUT~
+
+

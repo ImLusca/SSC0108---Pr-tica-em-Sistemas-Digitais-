@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "regCLR",
+					"strict" : false
+				},
+				{
+					"name" : "contJMP",
+					"strict" : false
+				},
+				{
+					"name" : "contCLR",
+					"strict" : false
+				},
+				{
+					"name" : "contOP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "contOP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "contOP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "contOP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "regTO[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regTO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "u[1]",
+					"strict" : false
+				},
+				{
+					"name" : "u[0]",
+					"strict" : false
+				},
+				{
+					"name" : "m[10]",
+					"strict" : false
+				},
+				{
+					"name" : "m[11]",
+					"strict" : false
+				},
+				{
+					"name" : "m[3]",
+					"strict" : false
+				},
+				{
+					"name" : "m[2]",
+					"strict" : false
+				},
+				{
+					"name" : "m[1]",
+					"strict" : false
+				},
+				{
+					"name" : "m[0]",
+					"strict" : false
+				},
+				{
+					"name" : "m[15]",
+					"strict" : false
+				},
+				{
+					"name" : "m[14]",
+					"strict" : false
+				},
+				{
+					"name" : "m[9]",
+					"strict" : false
+				},
+				{
+					"name" : "m[8]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

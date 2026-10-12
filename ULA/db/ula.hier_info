@@ -1,0 +1,365 @@
+|ula
+seg[0] <= display:inst1.a
+seg[1] <= display:inst1.b
+seg[2] <= display:inst1.c
+seg[3] <= display:inst1.d
+seg[4] <= display:inst1.e
+seg[5] <= display:inst1.f
+seg[6] <= display:inst1.g
+A[0] => sum4:inst10.A0
+A[0] => multiplicador:inst14.x0
+A[0] => sub4:inst9.A0
+A[0] => divisor:inst13.x0
+A[1] => sum4:inst10.A1
+A[1] => multiplicador:inst14.x1
+A[1] => sub4:inst9.A1
+A[1] => divisor:inst13.x1
+A[2] => sum4:inst10.A2
+A[2] => multiplicador:inst14.x2
+A[2] => sub4:inst9.A2
+A[2] => divisor:inst13.x2
+A[3] => sum4:inst10.A3
+A[3] => multiplicador:inst14.x3
+A[3] => sub4:inst9.A3
+A[3] => divisor:inst13.x3
+B[0] => sum4:inst10.B0
+B[0] => sub4:inst9.B0
+B[1] => sum4:inst10.B1
+B[1] => sub4:inst9.B1
+B[2] => sum4:inst10.B2
+B[2] => sub4:inst9.B2
+B[3] => sum4:inst10.B3
+B[3] => sub4:inst9.B3
+Seletor1 => saMU4:inst.sel[1]
+Seletor0 => saMU4:inst.sel[0]
+
+
+|ula|display:inst1
+a <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+1D => inst.IN0
+1D => inst27.IN0
+1D => inst28.IN0
+1D => inst12.IN0
+1D => inst30.IN0
+1D => inst33.IN0
+1D => inst41.IN2
+1D => inst40.IN1
+1D => inst45.IN2
+1D => inst44.IN1
+1D => inst49.IN2
+1D => inst50.IN3
+1D => inst51.IN0
+1D => inst54.IN3
+2C => inst10.IN0
+2C => inst28.IN1
+2C => inst30.IN1
+2C => inst31.IN1
+2C => inst36.IN2
+2C => inst37.IN1
+2C => inst41.IN1
+2C => inst42.IN2
+2C => inst49.IN1
+2C => inst51.IN1
+2C => inst54.IN2
+3B => inst8.IN0
+3B => inst27.IN2
+3B => inst26.IN2
+3B => inst32.IN1
+3B => inst33.IN2
+3B => inst31.IN2
+3B => inst35.IN1
+3B => inst41.IN0
+3B => inst40.IN0
+3B => inst46.IN1
+3B => inst50.IN1
+3B => inst54.IN1
+3B => inst55.IN1
+4A => inst9.IN0
+4A => inst27.IN3
+4A => inst28.IN3
+4A => inst30.IN2
+4A => inst32.IN2
+4A => inst35.IN2
+4A => inst42.IN0
+4A => inst50.IN0
+4A => inst55.IN0
+b <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|saMU4:inst
+data0x[0] => sub_wire1[0].IN1
+data0x[1] => sub_wire1[1].IN1
+data0x[2] => sub_wire1[2].IN1
+data0x[3] => sub_wire1[3].IN1
+data1x[0] => sub_wire1[4].IN1
+data1x[1] => sub_wire1[5].IN1
+data1x[2] => sub_wire1[6].IN1
+data1x[3] => sub_wire1[7].IN1
+data2x[0] => sub_wire1[8].IN1
+data2x[1] => sub_wire1[9].IN1
+data2x[2] => sub_wire1[10].IN1
+data2x[3] => sub_wire1[11].IN1
+data3x[0] => sub_wire1[12].IN1
+data3x[1] => sub_wire1[13].IN1
+data3x[2] => sub_wire1[14].IN1
+data3x[3] => sub_wire1[15].IN1
+sel[0] => sel[0].IN1
+sel[1] => sel[1].IN1
+result[0] <= lpm_mux:LPM_MUX_component.result
+result[1] <= lpm_mux:LPM_MUX_component.result
+result[2] <= lpm_mux:LPM_MUX_component.result
+result[3] <= lpm_mux:LPM_MUX_component.result
+
+
+|ula|saMU4:inst|lpm_mux:LPM_MUX_component
+data[0][0] => mux_drc:auto_generated.data[0]
+data[0][1] => mux_drc:auto_generated.data[1]
+data[0][2] => mux_drc:auto_generated.data[2]
+data[0][3] => mux_drc:auto_generated.data[3]
+data[1][0] => mux_drc:auto_generated.data[4]
+data[1][1] => mux_drc:auto_generated.data[5]
+data[1][2] => mux_drc:auto_generated.data[6]
+data[1][3] => mux_drc:auto_generated.data[7]
+data[2][0] => mux_drc:auto_generated.data[8]
+data[2][1] => mux_drc:auto_generated.data[9]
+data[2][2] => mux_drc:auto_generated.data[10]
+data[2][3] => mux_drc:auto_generated.data[11]
+data[3][0] => mux_drc:auto_generated.data[12]
+data[3][1] => mux_drc:auto_generated.data[13]
+data[3][2] => mux_drc:auto_generated.data[14]
+data[3][3] => mux_drc:auto_generated.data[15]
+sel[0] => mux_drc:auto_generated.sel[0]
+sel[1] => mux_drc:auto_generated.sel[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_drc:auto_generated.result[0]
+result[1] <= mux_drc:auto_generated.result[1]
+result[2] <= mux_drc:auto_generated.result[2]
+result[3] <= mux_drc:auto_generated.result[3]
+
+
+|ula|saMU4:inst|lpm_mux:LPM_MUX_component|mux_drc:auto_generated
+data[0] => _.IN0
+data[0] => _.IN0
+data[1] => _.IN0
+data[1] => _.IN0
+data[2] => _.IN0
+data[2] => _.IN0
+data[3] => _.IN0
+data[3] => _.IN0
+data[4] => _.IN0
+data[5] => _.IN0
+data[6] => _.IN0
+data[7] => _.IN0
+data[8] => _.IN1
+data[8] => _.IN1
+data[9] => _.IN1
+data[9] => _.IN1
+data[10] => _.IN1
+data[10] => _.IN1
+data[11] => _.IN1
+data[11] => _.IN1
+data[12] => _.IN0
+data[13] => _.IN0
+data[14] => _.IN0
+data[15] => _.IN0
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+
+
+|ula|sum4:inst10
+S0 <= fulladder:inst4.s1
+A0 => fulladder:inst4.A
+B0 => fulladder:inst4.B
+S1 <= fulladder:inst3.s1
+A1 => fulladder:inst3.A
+B1 => fulladder:inst3.B
+S2 <= fulladder:inst2.s1
+A2 => fulladder:inst2.A
+B2 => fulladder:inst2.B
+S3 <= fulladder:inst.s1
+A3 => fulladder:inst.A
+B3 => fulladder:inst.B
+
+
+|ula|sum4:inst10|fulladder:inst4
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|sum4:inst10|fulladder:inst3
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|sum4:inst10|fulladder:inst2
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|sum4:inst10|fulladder:inst
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|multiplicador:inst14
+y0 <= <GND>
+y1 <= x0.DB_MAX_OUTPUT_PORT_TYPE
+x0 => y1.DATAIN
+y2 <= x1.DB_MAX_OUTPUT_PORT_TYPE
+x1 => y2.DATAIN
+y3 <= x2.DB_MAX_OUTPUT_PORT_TYPE
+x2 => y3.DATAIN
+x3 => ~NO_FANOUT~
+
+
+|ula|sub4:inst9
+D0 <= subtrator:inst5.D
+B0 => subtrator:inst5.A
+A0 => subtrator:inst5.B
+D1 <= subtrator:inst6.D
+B1 => subtrator:inst6.A
+A1 => subtrator:inst6.B
+D2 <= subtrator:inst7.D
+B2 => subtrator:inst7.A
+A2 => subtrator:inst7.B
+D3 <= subtrator:inst8.D
+B3 => subtrator:inst8.A
+A3 => subtrator:inst8.B
+
+
+|ula|sub4:inst9|subtrator:inst5
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst6.IN0
+B => inst.IN0
+B => inst10.IN0
+B => inst8.IN1
+Bin => inst.IN1
+Bin => inst9.IN1
+Bin => inst10.IN1
+Bout <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|sub4:inst9|subtrator:inst6
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst6.IN0
+B => inst.IN0
+B => inst10.IN0
+B => inst8.IN1
+Bin => inst.IN1
+Bin => inst9.IN1
+Bin => inst10.IN1
+Bout <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|sub4:inst9|subtrator:inst7
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst6.IN0
+B => inst.IN0
+B => inst10.IN0
+B => inst8.IN1
+Bin => inst.IN1
+Bin => inst9.IN1
+Bin => inst10.IN1
+Bout <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|sub4:inst9|subtrator:inst8
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst6.IN0
+B => inst.IN0
+B => inst10.IN0
+B => inst8.IN1
+Bin => inst.IN1
+Bin => inst9.IN1
+Bin => inst10.IN1
+Bout <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|divisor:inst13
+y3 <= <GND>
+y2 <= x3.DB_MAX_OUTPUT_PORT_TYPE
+x3 => y2.DATAIN
+y1 <= x2.DB_MAX_OUTPUT_PORT_TYPE
+x2 => y1.DATAIN
+y0 <= x1.DB_MAX_OUTPUT_PORT_TYPE
+x1 => y0.DATAIN
+x0 => ~NO_FANOUT~
+
+

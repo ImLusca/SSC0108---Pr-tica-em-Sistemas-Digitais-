@@ -1,0 +1,282 @@
+$comment
+	File created using the following command:
+		vcd file registrador.msim.vcd -direction
+$end
+$date
+	Thu Aug 28 16:29:09 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module registrador_vlg_vec_tst $end
+$var reg 1 ! clear $end
+$var reg 1 " clock $end
+$var reg 4 # D [3:0] $end
+$var reg 1 $ load $end
+$var wire 1 % Q [3] $end
+$var wire 1 & Q [2] $end
+$var wire 1 ' Q [1] $end
+$var wire 1 ( Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / Q[3]~output_o $end
+$var wire 1 0 Q[2]~output_o $end
+$var wire 1 1 Q[1]~output_o $end
+$var wire 1 2 Q[0]~output_o $end
+$var wire 1 3 clock~input_o $end
+$var wire 1 4 clock~inputclkctrl_outclk $end
+$var wire 1 5 load~input_o $end
+$var wire 1 6 D[3]~input_o $end
+$var wire 1 7 inst10|LPM_MUX_component|auto_generated|result_node[0]~0_combout $end
+$var wire 1 8 clear~input_o $end
+$var wire 1 9 clear~inputclkctrl_outclk $end
+$var wire 1 : inst5~q $end
+$var wire 1 ; D[2]~input_o $end
+$var wire 1 < inst4~q $end
+$var wire 1 = D[1]~input_o $end
+$var wire 1 > inst3~feeder_combout $end
+$var wire 1 ? inst3~q $end
+$var wire 1 @ D[0]~input_o $end
+$var wire 1 A inst2~feeder_combout $end
+$var wire 1 B inst2~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+b0 #
+1$
+0(
+0'
+0&
+0%
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+00
+01
+02
+13
+14
+15
+06
+07
+18
+19
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+$end
+#300000
+0"
+03
+04
+#500000
+b1 #
+1@
+1A
+#800000
+1"
+13
+14
+1B
+12
+1(
+#1000000
+b11 #
+b10 #
+0@
+1=
+0A
+1>
+#1300000
+0"
+03
+04
+#1500000
+b11 #
+1@
+1A
+#1800000
+1"
+13
+14
+1?
+11
+1'
+#2000000
+b111 #
+b101 #
+b100 #
+0@
+0=
+1;
+0A
+0>
+#2300000
+0"
+03
+04
+#2500000
+b101 #
+1@
+1A
+#2800000
+1"
+13
+14
+0?
+1<
+10
+01
+0'
+1&
+#3000000
+b111 #
+b110 #
+0@
+1=
+0A
+1>
+#3300000
+0"
+03
+04
+#3500000
+b111 #
+1@
+1A
+#3800000
+1"
+13
+14
+1?
+11
+1'
+#4000000
+b1111 #
+b1011 #
+b1001 #
+b1000 #
+0@
+0=
+0;
+16
+0A
+0>
+17
+#4300000
+0"
+03
+04
+#4500000
+b1001 #
+1@
+1A
+#4800000
+1"
+13
+14
+0?
+0<
+1:
+1/
+00
+01
+0'
+0&
+1%
+#5000000
+b1011 #
+b1010 #
+0@
+1=
+0A
+1>
+#5300000
+0"
+03
+04
+#5500000
+b1011 #
+1@
+1A
+#5800000
+1"
+13
+14
+1?
+11
+1'
+#6000000
+b1111 #
+b1101 #
+b1100 #
+0@
+0=
+1;
+0A
+0>
+#6300000
+0"
+03
+04
+#6500000
+b1101 #
+1@
+1A
+#6800000
+1"
+13
+14
+0?
+1<
+10
+01
+0'
+1&
+#7000000
+b1111 #
+b1110 #
+0@
+1=
+0A
+1>
+#7300000
+0"
+03
+04
+#7500000
+b1111 #
+1@
+1A
+#7800000
+1"
+13
+14
+1?
+11
+1'
+#8000000

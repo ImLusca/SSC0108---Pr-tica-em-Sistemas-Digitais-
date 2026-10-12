@@ -1,0 +1,225 @@
+|registrador
+s[0] <= display:inst6.s[0]
+s[1] <= display:inst6.s[1]
+s[2] <= display:inst6.s[2]
+s[3] <= display:inst6.s[3]
+s[4] <= display:inst6.s[4]
+s[5] <= display:inst6.s[5]
+s[6] <= display:inst6.s[6]
+clear => inst2.ACLR
+clear => inst3.ACLR
+clear => inst4.ACLR
+clear => inst5.ACLR
+clock => debouncer:inst1.clk_fpga
+key => debouncer:inst1.input_key
+D[0] => asMU2:inst11.data1
+D[1] => asMU2:inst.data1
+D[2] => asMU2:inst8.data1
+D[3] => asMU2:inst10.data1
+load => asMU2:inst11.sel
+load => asMU2:inst.sel
+load => asMU2:inst8.sel
+load => asMU2:inst10.sel
+
+
+|registrador|display:inst6
+s[0] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+d[0] => inst.IN0
+d[0] => inst27.IN0
+d[0] => inst28.IN0
+d[0] => inst12.IN0
+d[0] => inst30.IN0
+d[0] => inst33.IN0
+d[0] => inst41.IN2
+d[0] => inst40.IN1
+d[0] => inst45.IN2
+d[0] => inst44.IN1
+d[0] => inst49.IN2
+d[0] => inst50.IN3
+d[0] => inst51.IN0
+d[0] => inst54.IN3
+d[1] => inst10.IN0
+d[1] => inst28.IN1
+d[1] => inst30.IN1
+d[1] => inst31.IN1
+d[1] => inst36.IN2
+d[1] => inst37.IN1
+d[1] => inst41.IN1
+d[1] => inst42.IN2
+d[1] => inst49.IN1
+d[1] => inst51.IN1
+d[1] => inst54.IN2
+d[2] => inst8.IN0
+d[2] => inst27.IN2
+d[2] => inst26.IN2
+d[2] => inst32.IN1
+d[2] => inst33.IN2
+d[2] => inst31.IN2
+d[2] => inst35.IN1
+d[2] => inst41.IN0
+d[2] => inst40.IN0
+d[2] => inst46.IN1
+d[2] => inst50.IN1
+d[2] => inst54.IN1
+d[2] => inst55.IN1
+d[3] => inst9.IN0
+d[3] => inst27.IN3
+d[3] => inst28.IN3
+d[3] => inst30.IN2
+d[3] => inst32.IN2
+d[3] => inst35.IN2
+d[3] => inst42.IN0
+d[3] => inst50.IN0
+d[3] => inst55.IN0
+
+
+|registrador|debouncer:inst1
+clk_fpga => counter[0].CLK
+clk_fpga => counter[1].CLK
+clk_fpga => counter[2].CLK
+clk_fpga => counter[3].CLK
+clk_fpga => counter[4].CLK
+clk_fpga => counter[5].CLK
+clk_fpga => counter[6].CLK
+clk_fpga => counter[7].CLK
+clk_fpga => counter[8].CLK
+clk_fpga => counter[9].CLK
+clk_fpga => counter[10].CLK
+clk_fpga => counter[11].CLK
+clk_fpga => counter[12].CLK
+clk_fpga => counter[13].CLK
+clk_fpga => counter[14].CLK
+clk_fpga => counter[15].CLK
+clk_fpga => out_key~reg0.CLK
+clk_fpga => intermediate.CLK
+rst_debouncer => counter[0].ACLR
+rst_debouncer => counter[1].ACLR
+rst_debouncer => counter[2].ACLR
+rst_debouncer => counter[3].ACLR
+rst_debouncer => counter[4].ACLR
+rst_debouncer => counter[5].ACLR
+rst_debouncer => counter[6].ACLR
+rst_debouncer => counter[7].ACLR
+rst_debouncer => counter[8].ACLR
+rst_debouncer => counter[9].ACLR
+rst_debouncer => counter[10].ACLR
+rst_debouncer => counter[11].ACLR
+rst_debouncer => counter[12].ACLR
+rst_debouncer => counter[13].ACLR
+rst_debouncer => counter[14].ACLR
+rst_debouncer => counter[15].ACLR
+rst_debouncer => out_key~reg0.ALOAD
+rst_debouncer => intermediate.ALOAD
+input_key => always0.IN1
+input_key => out_key~reg0.ADATA
+input_key => intermediate.ADATA
+input_key => intermediate.DATAIN
+out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registrador|asMU2:inst11
+data0 => sub_wire1[0].IN1
+data1 => sub_wire1[1].IN1
+sel => sub_wire4.IN1
+result <= lpm_mux:LPM_MUX_component.result
+
+
+|registrador|asMU2:inst11|lpm_mux:LPM_MUX_component
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|registrador|asMU2:inst11|lpm_mux:LPM_MUX_component|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|registrador|asMU2:inst
+data0 => sub_wire1[0].IN1
+data1 => sub_wire1[1].IN1
+sel => sub_wire4.IN1
+result <= lpm_mux:LPM_MUX_component.result
+
+
+|registrador|asMU2:inst|lpm_mux:LPM_MUX_component
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|registrador|asMU2:inst|lpm_mux:LPM_MUX_component|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|registrador|asMU2:inst8
+data0 => sub_wire1[0].IN1
+data1 => sub_wire1[1].IN1
+sel => sub_wire4.IN1
+result <= lpm_mux:LPM_MUX_component.result
+
+
+|registrador|asMU2:inst8|lpm_mux:LPM_MUX_component
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|registrador|asMU2:inst8|lpm_mux:LPM_MUX_component|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|registrador|asMU2:inst10
+data0 => sub_wire1[0].IN1
+data1 => sub_wire1[1].IN1
+sel => sub_wire4.IN1
+result <= lpm_mux:LPM_MUX_component.result
+
+
+|registrador|asMU2:inst10|lpm_mux:LPM_MUX_component
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|registrador|asMU2:inst10|lpm_mux:LPM_MUX_component|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+

@@ -1,0 +1,64 @@
+|controle
+regCLR <= s[1].DB_MAX_OUTPUT_PORT_TYPE
+m[0] => contOP[0].DATAIN
+m[1] => contOP[1].DATAIN
+m[2] => contOP[2].DATAIN
+m[3] => contOP[3].DATAIN
+m[4] => ~NO_FANOUT~
+m[5] => ~NO_FANOUT~
+m[6] => ~NO_FANOUT~
+m[7] => ~NO_FANOUT~
+m[8] => u[0].DATAIN
+m[9] => u[1].DATAIN
+m[10] => deMU4:inst4.c0
+m[11] => deMU4:inst4.c1
+m[12] => ~NO_FANOUT~
+m[13] => ~NO_FANOUT~
+m[14] => deMU4:inst5.c0
+m[15] => deMU4:inst5.c1
+contJMP <= s[3].DB_MAX_OUTPUT_PORT_TYPE
+contCLR <= s[2].DB_MAX_OUTPUT_PORT_TYPE
+contOP[0] <= m[0].DB_MAX_OUTPUT_PORT_TYPE
+contOP[1] <= m[1].DB_MAX_OUTPUT_PORT_TYPE
+contOP[2] <= m[2].DB_MAX_OUTPUT_PORT_TYPE
+contOP[3] <= m[3].DB_MAX_OUTPUT_PORT_TYPE
+regTO[1] <= deMU4:inst5.s[1]
+regTO[2] <= deMU4:inst5.s[2]
+u[0] <= m[8].DB_MAX_OUTPUT_PORT_TYPE
+u[1] <= m[9].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|deMU4:inst4
+s[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+c1 => inst.IN0
+c1 => inst5.IN0
+c1 => inst6.IN0
+c0 => inst1.IN0
+c0 => inst4.IN1
+c0 => inst6.IN1
+entrada => inst3.IN2
+entrada => inst4.IN2
+entrada => inst5.IN2
+entrada => inst6.IN2
+
+
+|controle|deMU4:inst5
+s[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+c1 => inst.IN0
+c1 => inst5.IN0
+c1 => inst6.IN0
+c0 => inst1.IN0
+c0 => inst4.IN1
+c0 => inst6.IN1
+entrada => inst3.IN2
+entrada => inst4.IN2
+entrada => inst5.IN2
+entrada => inst6.IN2
+
+

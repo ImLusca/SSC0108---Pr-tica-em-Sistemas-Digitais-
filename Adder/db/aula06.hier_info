@@ -1,0 +1,59 @@
+|aula06
+S0 <= fulladder:inst4.s1
+A0 => fulladder:inst4.A
+B0 => fulladder:inst4.B
+S1 <= fulladder:inst3.s1
+A1 => fulladder:inst3.A
+B1 => fulladder:inst3.B
+S2 <= fulladder:inst2.s1
+A2 => fulladder:inst2.A
+B2 => fulladder:inst2.B
+S3 <= fulladder:inst.s1
+A3 => fulladder:inst.A
+B3 => fulladder:inst.B
+
+
+|aula06|fulladder:inst4
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula06|fulladder:inst3
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula06|fulladder:inst2
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula06|fulladder:inst
+s1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst2.IN0
+C0 => inst.IN0
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

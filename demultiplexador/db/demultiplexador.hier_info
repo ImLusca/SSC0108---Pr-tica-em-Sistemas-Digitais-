@@ -1,0 +1,9 @@
+|demultiplexador
+saida1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+controle => inst.IN0
+controle => inst3.IN0
+entrada => inst2.IN1
+entrada => inst3.IN1
+saida2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
