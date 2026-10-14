@@ -22,9 +22,9 @@ on the Quartus Prime software download page.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 312 200 480 216)
+	(rect 312 48 480 64)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 10)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -38,9 +38,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 312 296 480 312)
+	(rect 312 128 480 144)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "CLR" (rect 5 0 26 12)(font "Intel Clear" ))
+	(text "CLR" (rect 5 0 25 12)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -54,9 +54,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 312 224 480 240)
+	(rect 312 72 480 88)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "JMP" (rect 5 0 28 12)(font "Intel Clear" ))
+	(text "JMP" (rect 5 0 27 12)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -70,9 +70,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 312 256 480 272)
+	(rect 312 96 480 112)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "Addr[5..0]" (rect 5 0 52 12)(font "Intel Clear" ))
+	(text "Addr[5..0]" (rect 5 0 51 12)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -86,7 +86,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 312 336 488 352)
+	(rect 376 200 552 216)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "S[5..0]" (rect 90 0 123 10)(font "Arial" ))
 	(pt 0 8)
@@ -101,7 +101,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 504 288 552 320)
+	(rect 480 120 528 152)
 	(text "NOT" (rect 1 0 21 9)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 21 20 31)(font "Arial" ))
 	(port
@@ -126,7 +126,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 680 48 792 144)
+	(rect 672 48 784 144)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst1" (rect 8 80 30 92)(font "Intel Clear" ))
 	(port
@@ -169,7 +169,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 680 160 792 256)
+	(rect 672 160 784 256)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst2" (rect 8 80 30 92)(font "Intel Clear" ))
 	(port
@@ -212,7 +212,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 680 264 792 360)
+	(rect 672 264 784 360)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst3" (rect 8 80 30 92)(font "Intel Clear" ))
 	(port
@@ -255,7 +255,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 920 48 1032 144)
+	(rect 944 40 1056 136)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst2" (rect 8 80 30 92)(font "Intel Clear" ))
 	(port
@@ -298,7 +298,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 920 160 1032 256)
+	(rect 944 152 1056 248)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst4" (rect 8 80 30 92)(font "Intel Clear" ))
 	(port
@@ -341,7 +341,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 912 272 1024 368)
+	(rect 944 256 1056 352)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst5" (rect 8 80 30 92)(font "Intel Clear" ))
 	(port
@@ -449,7 +449,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 488 456 552 536)
+	(rect 472 456 536 536)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst11" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -499,7 +499,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 632 456 696 536)
+	(rect 600 456 664 536)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -549,7 +549,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 336 600 400 680)
+	(rect 728 448 792 528)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -599,7 +599,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 488 600 552 680)
+	(rect 848 448 912 528)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst14" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -649,7 +649,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 632 600 696 680)
+	(rect 960 448 1024 528)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst15" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -699,7 +699,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 864 464 928 512)
+	(rect 336 248 400 296)
 	(text "AND2" (rect 1 0 25 9)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 37 25 49)(font "Intel Clear" ))
 	(port
@@ -731,7 +731,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 864 528 928 576)
+	(rect 336 312 400 360)
 	(text "AND2" (rect 1 0 25 9)(font "Arial" (font_size 6)))
 	(text "inst9" (rect 3 37 25 49)(font "Intel Clear" ))
 	(port
@@ -763,7 +763,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 864 600 928 648)
+	(rect 504 248 568 296)
 	(text "AND2" (rect 1 0 25 9)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 37 31 49)(font "Intel Clear" ))
 	(port
@@ -795,7 +795,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 864 664 928 712)
+	(rect 504 312 568 360)
 	(text "AND2" (rect 1 0 25 9)(font "Arial" (font_size 6)))
 	(text "inst16" (rect 3 37 31 49)(font "Intel Clear" ))
 	(port
@@ -827,165 +827,6 @@ on the Quartus Prime software download page.
 	)
 )
 (connector
-	(pt 480 304)
-	(pt 504 304)
-)
-(connector
-	(text "CLR" (rect 562 288 582 300)(font "Intel Clear" ))
-	(pt 552 304)
-	(pt 576 304)
-)
-(connector
-	(text "Addr[0]" (rect 640 64 675 76)(font "Intel Clear" ))
-	(pt 680 80)
-	(pt 656 80)
-)
-(connector
-	(text "JMP" (rect 666 80 688 92)(font "Intel Clear" ))
-	(pt 680 96)
-	(pt 656 96)
-)
-(connector
-	(text "CLR" (rect 666 96 686 108)(font "Intel Clear" ))
-	(pt 680 112)
-	(pt 656 112)
-)
-(connector
-	(text "CL0" (rect 802 80 820 92)(font "Intel Clear" ))
-	(pt 824 96)
-	(pt 792 96)
-)
-(connector
-	(text "ST0" (rect 802 64 819 76)(font "Intel Clear" ))
-	(pt 824 80)
-	(pt 792 80)
-)
-(connector
-	(text "JMP" (rect 666 192 688 204)(font "Intel Clear" ))
-	(pt 680 208)
-	(pt 656 208)
-)
-(connector
-	(text "CLR" (rect 666 208 686 220)(font "Intel Clear" ))
-	(pt 680 224)
-	(pt 656 224)
-)
-(connector
-	(text "JMP" (rect 666 296 688 308)(font "Intel Clear" ))
-	(pt 680 312)
-	(pt 656 312)
-)
-(connector
-	(text "CLR" (rect 666 312 686 324)(font "Intel Clear" ))
-	(pt 680 328)
-	(pt 656 328)
-)
-(connector
-	(text "JMP" (rect 906 80 928 92)(font "Intel Clear" ))
-	(pt 920 96)
-	(pt 896 96)
-)
-(connector
-	(text "CLR" (rect 906 96 926 108)(font "Intel Clear" ))
-	(pt 920 112)
-	(pt 896 112)
-)
-(connector
-	(text "JMP" (rect 906 192 928 204)(font "Intel Clear" ))
-	(pt 920 208)
-	(pt 896 208)
-)
-(connector
-	(text "CLR" (rect 906 208 926 220)(font "Intel Clear" ))
-	(pt 920 224)
-	(pt 896 224)
-)
-(connector
-	(text "JMP" (rect 898 304 920 316)(font "Intel Clear" ))
-	(pt 912 320)
-	(pt 888 320)
-)
-(connector
-	(text "CLR" (rect 898 320 918 332)(font "Intel Clear" ))
-	(pt 912 336)
-	(pt 888 336)
-)
-(connector
-	(text "Addr[1]" (rect 640 176 675 188)(font "Intel Clear" ))
-	(pt 680 192)
-	(pt 656 192)
-)
-(connector
-	(text "Addr[2]" (rect 640 280 675 292)(font "Intel Clear" ))
-	(pt 680 296)
-	(pt 656 296)
-)
-(connector
-	(text "ST1" (rect 802 176 819 188)(font "Intel Clear" ))
-	(pt 824 192)
-	(pt 792 192)
-)
-(connector
-	(text "CL1" (rect 802 192 820 204)(font "Intel Clear" ))
-	(pt 824 208)
-	(pt 792 208)
-)
-(connector
-	(text "ST2" (rect 802 280 819 292)(font "Intel Clear" ))
-	(pt 824 296)
-	(pt 792 296)
-)
-(connector
-	(text "CL2" (rect 802 296 820 308)(font "Intel Clear" ))
-	(pt 824 312)
-	(pt 792 312)
-)
-(connector
-	(text "Addr[3]" (rect 880 64 915 76)(font "Intel Clear" ))
-	(pt 920 80)
-	(pt 896 80)
-)
-(connector
-	(text "Addr[4]" (rect 880 176 915 188)(font "Intel Clear" ))
-	(pt 920 192)
-	(pt 896 192)
-)
-(connector
-	(text "Addr[5]" (rect 872 288 907 300)(font "Intel Clear" ))
-	(pt 912 304)
-	(pt 888 304)
-)
-(connector
-	(text "ST3" (rect 1042 64 1059 76)(font "Intel Clear" ))
-	(pt 1064 80)
-	(pt 1032 80)
-)
-(connector
-	(text "CL3" (rect 1042 80 1060 92)(font "Intel Clear" ))
-	(pt 1064 96)
-	(pt 1032 96)
-)
-(connector
-	(text "ST4" (rect 1042 176 1059 188)(font "Intel Clear" ))
-	(pt 1064 192)
-	(pt 1032 192)
-)
-(connector
-	(text "CL4" (rect 1042 192 1060 204)(font "Intel Clear" ))
-	(pt 1064 208)
-	(pt 1032 208)
-)
-(connector
-	(text "ST5" (rect 1034 288 1051 300)(font "Intel Clear" ))
-	(pt 1056 304)
-	(pt 1024 304)
-)
-(connector
-	(text "CL5" (rect 1034 304 1052 316)(font "Intel Clear" ))
-	(pt 1056 320)
-	(pt 1024 320)
-)
-(connector
 	(pt 304 480)
 	(pt 304 464)
 )
@@ -1005,76 +846,6 @@ on the Quartus Prime software download page.
 	(pt 416 480)
 )
 (connector
-	(text "ST1" (rect 504 431 516 448)(font "Intel Clear" )(vertical))
-	(pt 520 456)
-	(pt 520 440)
-)
-(connector
-	(text "CL1" (rect 504 542 516 560)(font "Intel Clear" )(vertical))
-	(pt 520 536)
-	(pt 520 552)
-)
-(connector
-	(text "S0" (rect 474 464 485 476)(font "Intel Clear" ))
-	(pt 488 480)
-	(pt 464 480)
-)
-(connector
-	(text "CLK" (rect 466 480 486 492)(font "Intel Clear" ))
-	(pt 488 496)
-	(pt 464 496)
-)
-(connector
-	(text "ST2" (rect 647 430 659 447)(font "Intel Clear" )(vertical))
-	(pt 664 456)
-	(pt 664 440)
-)
-(connector
-	(text "CL2" (rect 648 542 660 560)(font "Intel Clear" )(vertical))
-	(pt 664 536)
-	(pt 664 560)
-)
-(connector
-	(text "CLK" (rect 616 480 636 492)(font "Intel Clear" ))
-	(pt 632 496)
-	(pt 616 496)
-)
-(connector
-	(text "S2" (rect 706 464 717 476)(font "Intel Clear" ))
-	(pt 696 480)
-	(pt 712 480)
-)
-(connector
-	(text "S1" (rect 554 464 565 476)(font "Intel Clear" ))
-	(pt 552 480)
-	(pt 576 480)
-)
-(connector
-	(text "I2" (rect 938 472 946 484)(font "Intel Clear" ))
-	(pt 928 488)
-	(pt 960 488)
-)
-(connector
-	(text "I2" (rect 626 464 634 476)(font "Intel Clear" ))
-	(pt 632 480)
-	(pt 616 480)
-)
-(connector
-	(text "I3" (rect 938 536 946 548)(font "Intel Clear" ))
-	(pt 928 552)
-	(pt 960 552)
-)
-(connector
-	(text "I4" (rect 938 608 946 620)(font "Intel Clear" ))
-	(pt 928 624)
-	(pt 960 624)
-)
-(connector
-	(text "I5" (rect 938 672 946 684)(font "Intel Clear" ))
-	(pt 928 688)
-	(pt 960 688)
-)
-(connector
 	(pt 304 480)
 	(pt 336 480)
 )
@@ -1084,117 +855,364 @@ on the Quartus Prime software download page.
 	(pt 336 496)
 )
 (connector
-	(text "S0" (rect 842 464 853 476)(font "Intel Clear" ))
-	(pt 832 480)
-	(pt 864 480)
+	(text "Addr[5..0]" (rect 490 88 536 100)(font "Intel Clear" ))
+	(pt 544 104)
+	(pt 480 104)
+	(bus)
 )
 (connector
-	(text "S1" (rect 842 480 853 492)(font "Intel Clear" ))
-	(pt 832 496)
-	(pt 864 496)
+	(text "JMP" (rect 490 64 512 76)(font "Intel Clear" ))
+	(pt 544 80)
+	(pt 480 80)
 )
 (connector
-	(text "I2" (rect 842 528 850 540)(font "Intel Clear" ))
-	(pt 832 544)
-	(pt 864 544)
+	(text "CLK" (rect 490 40 510 52)(font "Intel Clear" ))
+	(pt 544 56)
+	(pt 480 56)
 )
 (connector
-	(text "S2" (rect 842 544 853 556)(font "Intel Clear" ))
-	(pt 832 560)
-	(pt 864 560)
+	(text "I2" (rect 410 256 418 268)(font "Intel Clear" ))
+	(pt 400 272)
+	(pt 432 272)
 )
 (connector
-	(text "I3" (rect 842 600 850 612)(font "Intel Clear" ))
-	(pt 832 616)
-	(pt 864 616)
+	(text "I3" (rect 410 320 418 332)(font "Intel Clear" ))
+	(pt 400 336)
+	(pt 432 336)
 )
 (connector
-	(text "S3" (rect 842 616 853 628)(font "Intel Clear" ))
-	(pt 832 632)
-	(pt 864 632)
+	(text "S0" (rect 314 248 325 260)(font "Intel Clear" ))
+	(pt 304 264)
+	(pt 336 264)
 )
 (connector
-	(text "I4" (rect 842 664 850 676)(font "Intel Clear" ))
-	(pt 832 680)
-	(pt 864 680)
+	(text "S1" (rect 314 264 325 276)(font "Intel Clear" ))
+	(pt 304 280)
+	(pt 336 280)
 )
 (connector
-	(text "S4" (rect 842 680 853 692)(font "Intel Clear" ))
-	(pt 832 696)
-	(pt 864 696)
+	(text "I2" (rect 314 312 322 324)(font "Intel Clear" ))
+	(pt 304 328)
+	(pt 336 328)
 )
 (connector
-	(text "ST3" (rect 352 575 364 592)(font "Intel Clear" )(vertical))
-	(pt 368 600)
-	(pt 368 584)
+	(text "S2" (rect 314 328 325 340)(font "Intel Clear" ))
+	(pt 304 344)
+	(pt 336 344)
 )
 (connector
-	(text "CL3" (rect 352 686 364 704)(font "Intel Clear" )(vertical))
-	(pt 368 680)
-	(pt 368 712)
+	(text "I4" (rect 578 256 586 268)(font "Intel Clear" ))
+	(pt 568 272)
+	(pt 600 272)
 )
 (connector
-	(text "CLK" (rect 322 624 342 636)(font "Intel Clear" ))
-	(pt 336 640)
-	(pt 312 640)
+	(text "I5" (rect 578 320 586 332)(font "Intel Clear" ))
+	(pt 568 336)
+	(pt 600 336)
 )
 (connector
-	(text "S3" (rect 410 608 421 620)(font "Intel Clear" ))
-	(pt 400 624)
-	(pt 416 624)
+	(text "I3" (rect 482 248 490 260)(font "Intel Clear" ))
+	(pt 472 264)
+	(pt 504 264)
 )
 (connector
-	(text "ST4" (rect 504 575 516 592)(font "Intel Clear" )(vertical))
-	(pt 520 600)
-	(pt 520 584)
+	(text "S3" (rect 482 264 493 276)(font "Intel Clear" ))
+	(pt 472 280)
+	(pt 504 280)
 )
 (connector
-	(text "CL4" (rect 504 686 516 704)(font "Intel Clear" )(vertical))
-	(pt 520 680)
-	(pt 520 712)
+	(text "I4" (rect 482 312 490 324)(font "Intel Clear" ))
+	(pt 472 328)
+	(pt 504 328)
 )
 (connector
-	(text "S4" (rect 552 608 563 620)(font "Intel Clear" ))
-	(pt 552 624)
-	(pt 560 624)
+	(text "S4" (rect 482 328 493 340)(font "Intel Clear" ))
+	(pt 472 344)
+	(pt 504 344)
 )
 (connector
-	(text "CLK" (rect 472 624 492 636)(font "Intel Clear" ))
-	(pt 472 640)
-	(pt 488 640)
+	(text "S[5..0]" (rect 330 192 359 204)(font "Intel Clear" ))
+	(pt 376 208)
+	(pt 320 208)
+	(bus)
 )
 (connector
-	(text "ST5" (rect 648 583 660 600)(font "Intel Clear" )(vertical))
-	(pt 664 600)
-	(pt 664 584)
+	(text "CLR" (rect 538 120 558 132)(font "Intel Clear" ))
+	(pt 544 136)
+	(pt 528 136)
 )
 (connector
-	(text "CL5" (rect 648 678 660 696)(font "Intel Clear" )(vertical))
-	(pt 664 680)
-	(pt 664 704)
+	(text "ST1" (rect 488 431 500 448)(font "Intel Clear" )(vertical))
+	(pt 504 456)
+	(pt 504 440)
 )
 (connector
-	(text "S5" (rect 706 608 717 620)(font "Intel Clear" ))
-	(pt 696 624)
-	(pt 712 624)
+	(text "CL1" (rect 488 542 500 560)(font "Intel Clear" )(vertical))
+	(pt 504 536)
+	(pt 504 552)
 )
 (connector
-	(text "CLK" (rect 616 624 636 636)(font "Intel Clear" ))
-	(pt 616 640)
-	(pt 632 640)
+	(text "S0" (rect 458 464 469 476)(font "Intel Clear" ))
+	(pt 472 480)
+	(pt 448 480)
 )
 (connector
-	(text "I4" (rect 474 600 482 612)(font "Intel Clear" ))
-	(pt 488 624)
-	(pt 472 624)
+	(text "CLK" (rect 450 480 470 492)(font "Intel Clear" ))
+	(pt 472 496)
+	(pt 448 496)
 )
 (connector
-	(text "I5" (rect 618 608 626 620)(font "Intel Clear" ))
-	(pt 616 624)
-	(pt 632 624)
+	(text "ST2" (rect 615 430 627 447)(font "Intel Clear" )(vertical))
+	(pt 632 456)
+	(pt 632 440)
 )
 (connector
-	(text "I3" (rect 314 608 322 620)(font "Intel Clear" ))
-	(pt 304 624)
-	(pt 336 624)
+	(text "CL2" (rect 616 542 628 560)(font "Intel Clear" )(vertical))
+	(pt 632 536)
+	(pt 632 560)
+)
+(connector
+	(text "CLK" (rect 584 480 604 492)(font "Intel Clear" ))
+	(pt 600 496)
+	(pt 584 496)
+)
+(connector
+	(text "S2" (rect 674 464 685 476)(font "Intel Clear" ))
+	(pt 664 480)
+	(pt 680 480)
+)
+(connector
+	(text "I2" (rect 594 464 602 476)(font "Intel Clear" ))
+	(pt 600 480)
+	(pt 584 480)
+)
+(connector
+	(text "ST3" (rect 744 423 756 440)(font "Intel Clear" )(vertical))
+	(pt 760 448)
+	(pt 760 432)
+)
+(connector
+	(text "CL3" (rect 744 534 756 552)(font "Intel Clear" )(vertical))
+	(pt 760 528)
+	(pt 760 560)
+)
+(connector
+	(text "CLK" (rect 714 472 734 484)(font "Intel Clear" ))
+	(pt 728 488)
+	(pt 704 488)
+)
+(connector
+	(text "S3" (rect 802 456 813 468)(font "Intel Clear" ))
+	(pt 792 472)
+	(pt 808 472)
+)
+(connector
+	(text "I3" (rect 706 456 714 468)(font "Intel Clear" ))
+	(pt 696 472)
+	(pt 728 472)
+)
+(connector
+	(text "ST4" (rect 864 423 876 440)(font "Intel Clear" )(vertical))
+	(pt 880 448)
+	(pt 880 432)
+)
+(connector
+	(text "CL4" (rect 864 534 876 552)(font "Intel Clear" )(vertical))
+	(pt 880 528)
+	(pt 880 560)
+)
+(connector
+	(text "S4" (rect 912 456 923 468)(font "Intel Clear" ))
+	(pt 912 472)
+	(pt 920 472)
+)
+(connector
+	(text "CLK" (rect 832 472 852 484)(font "Intel Clear" ))
+	(pt 832 488)
+	(pt 848 488)
+)
+(connector
+	(text "I4" (rect 834 448 842 460)(font "Intel Clear" ))
+	(pt 848 472)
+	(pt 832 472)
+)
+(connector
+	(text "ST5" (rect 976 431 988 448)(font "Intel Clear" )(vertical))
+	(pt 992 448)
+	(pt 992 432)
+)
+(connector
+	(text "CL5" (rect 976 526 988 544)(font "Intel Clear" )(vertical))
+	(pt 992 528)
+	(pt 992 552)
+)
+(connector
+	(text "S5" (rect 1034 456 1045 468)(font "Intel Clear" ))
+	(pt 1024 472)
+	(pt 1040 472)
+)
+(connector
+	(text "CLK" (rect 944 472 964 484)(font "Intel Clear" ))
+	(pt 944 488)
+	(pt 960 488)
+)
+(connector
+	(text "I5" (rect 946 456 954 468)(font "Intel Clear" ))
+	(pt 944 472)
+	(pt 960 472)
+)
+(connector
+	(text "S1" (rect 538 464 549 476)(font "Intel Clear" ))
+	(pt 536 480)
+	(pt 560 480)
+)
+(connector
+	(text "ST3" (rect 1066 56 1083 68)(font "Intel Clear" ))
+	(pt 1088 72)
+	(pt 1056 72)
+)
+(connector
+	(text "CL3" (rect 1066 72 1084 84)(font "Intel Clear" ))
+	(pt 1088 88)
+	(pt 1056 88)
+)
+(connector
+	(text "ST4" (rect 1066 168 1083 180)(font "Intel Clear" ))
+	(pt 1088 184)
+	(pt 1056 184)
+)
+(connector
+	(text "CL4" (rect 1066 184 1084 196)(font "Intel Clear" ))
+	(pt 1088 200)
+	(pt 1056 200)
+)
+(connector
+	(text "Addr[3]" (rect 904 56 939 68)(font "Intel Clear" ))
+	(pt 920 72)
+	(pt 944 72)
+)
+(connector
+	(text "JMP" (rect 930 72 952 84)(font "Intel Clear" ))
+	(pt 920 88)
+	(pt 944 88)
+)
+(connector
+	(text "CLR" (rect 930 88 950 100)(font "Intel Clear" ))
+	(pt 920 104)
+	(pt 944 104)
+)
+(connector
+	(text "Addr[4]" (rect 904 168 939 180)(font "Intel Clear" ))
+	(pt 920 184)
+	(pt 944 184)
+)
+(connector
+	(text "JMP" (rect 930 184 952 196)(font "Intel Clear" ))
+	(pt 920 200)
+	(pt 944 200)
+)
+(connector
+	(text "CLR" (rect 930 200 950 212)(font "Intel Clear" ))
+	(pt 920 216)
+	(pt 944 216)
+)
+(connector
+	(text "CL0" (rect 794 80 812 92)(font "Intel Clear" ))
+	(pt 816 96)
+	(pt 784 96)
+)
+(connector
+	(text "ST0" (rect 794 64 811 76)(font "Intel Clear" ))
+	(pt 816 80)
+	(pt 784 80)
+)
+(connector
+	(text "ST1" (rect 794 176 811 188)(font "Intel Clear" ))
+	(pt 816 192)
+	(pt 784 192)
+)
+(connector
+	(text "CL1" (rect 794 192 812 204)(font "Intel Clear" ))
+	(pt 816 208)
+	(pt 784 208)
+)
+(connector
+	(text "ST2" (rect 794 280 811 292)(font "Intel Clear" ))
+	(pt 816 296)
+	(pt 784 296)
+)
+(connector
+	(text "CL2" (rect 794 296 812 308)(font "Intel Clear" ))
+	(pt 816 312)
+	(pt 784 312)
+)
+(connector
+	(text "Addr[0]" (rect 632 64 667 76)(font "Intel Clear" ))
+	(pt 648 80)
+	(pt 672 80)
+)
+(connector
+	(text "JMP" (rect 658 80 680 92)(font "Intel Clear" ))
+	(pt 648 96)
+	(pt 672 96)
+)
+(connector
+	(text "CLR" (rect 658 96 678 108)(font "Intel Clear" ))
+	(pt 648 112)
+	(pt 672 112)
+)
+(connector
+	(text "Addr[1]" (rect 632 176 667 188)(font "Intel Clear" ))
+	(pt 648 192)
+	(pt 672 192)
+)
+(connector
+	(text "JMP" (rect 658 192 680 204)(font "Intel Clear" ))
+	(pt 648 208)
+	(pt 672 208)
+)
+(connector
+	(text "CLR" (rect 658 208 678 220)(font "Intel Clear" ))
+	(pt 648 224)
+	(pt 672 224)
+)
+(connector
+	(text "Addr[2]" (rect 632 280 667 292)(font "Intel Clear" ))
+	(pt 648 296)
+	(pt 672 296)
+)
+(connector
+	(text "JMP" (rect 658 296 680 308)(font "Intel Clear" ))
+	(pt 648 312)
+	(pt 672 312)
+)
+(connector
+	(text "CLR" (rect 658 312 678 324)(font "Intel Clear" ))
+	(pt 648 328)
+	(pt 672 328)
+)
+(connector
+	(text "Addr[5]" (rect 904 272 939 284)(font "Intel Clear" ))
+	(pt 920 288)
+	(pt 944 288)
+)
+(connector
+	(text "JMP" (rect 930 288 952 300)(font "Intel Clear" ))
+	(pt 920 304)
+	(pt 944 304)
+)
+(connector
+	(text "CLR" (rect 930 304 950 316)(font "Intel Clear" ))
+	(pt 920 320)
+	(pt 944 320)
+)
+(connector
+	(text "ST5" (rect 1066 272 1083 284)(font "Intel Clear" ))
+	(pt 1056 288)
+	(pt 1088 288)
+)
+(connector
+	(text "CL5" (rect 1066 288 1084 300)(font "Intel Clear" ))
+	(pt 1056 304)
+	(pt 1088 304)
 )

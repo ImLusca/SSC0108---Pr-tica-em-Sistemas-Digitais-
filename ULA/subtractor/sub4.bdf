@@ -54,7 +54,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 320 192 496 208)
+	(rect 344 192 520 208)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "D[3..0]" (rect 90 0 124 10)(font "Arial" ))
 	(pt 0 8)
@@ -434,4 +434,22 @@ on the Quartus Prime software download page.
 	(text "D3" (rect 866 304 878 316)(font "Intel Clear" ))
 	(pt 856 320)
 	(pt 888 320)
+)
+(connector
+	(text "A[3..0]" (rect 488 120 518 132)(font "Intel Clear" ))
+	(pt 512 136)
+	(pt 488 136)
+	(bus)
+)
+(connector
+	(text "B[3..0]" (rect 488 144 518 156)(font "Intel Clear" ))
+	(pt 488 160)
+	(pt 512 160)
+	(bus)
+)
+(connector
+	(text "D[3..0]" (rect 320 184 350 196)(font "Intel Clear" ))
+	(pt 344 200)
+	(pt 320 200)
+	(bus)
 )

@@ -24,7 +24,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 304 160 472 176)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "A[3..0]" (rect 5 0 39 10)(font "Arial" ))
+	(text "A[3..0]" (rect 5 0 38 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -163,4 +163,10 @@ on the Quartus Prime software download page.
 	(text "A0" (rect 538 200 550 212)(font "Intel Clear" ))
 	(pt 528 216)
 	(pt 616 216)
+)
+(connector
+	(text "A[3..0]" (rect 472 152 502 164)(font "Intel Clear" ))
+	(pt 472 168)
+	(pt 496 168)
+	(bus)
 )
