@@ -1,5 +1,5 @@
 Fitter report for miniCPU
-Thu Oct 15 15:38:57 2026
+Thu Oct 15 17:52:41 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -65,18 +65,18 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 15 15:38:57 2026           ;
+; Fitter Status                   ; Successful - Thu Oct 15 17:52:41 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; miniCPU                                         ;
 ; Top-level Entity Name           ; miniCPU                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CEBA4F23C7                                     ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 23 / 18,480 ( < 1 % )                           ;
+; Logic utilization (in ALMs)     ; 36 / 18,480 ( < 1 % )                           ;
 ; Total registers                 ; 6                                               ;
-; Total pins                      ; 30 / 224 ( 13 % )                               ;
+; Total pins                      ; 36 / 224 ( 16 % )                               ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 20 / 3,153,920 ( < 1 % )                        ;
+; Total block memory bits         ; 1,024 / 3,153,920 ( < 1 % )                     ;
 ; Total RAM Blocks                ; 1 / 308 ( < 1 % )                               ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                                  ;
 ; Total HSSI RX PCSs              ; 0                                               ;
@@ -155,15 +155,17 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
-;     Processors 5-8         ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.3%      ;
+;     Processor 5            ;   0.3%      ;
+;     Processor 6            ;   0.3%      ;
+;     Processors 7-8         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -200,8 +202,8 @@ on the Quartus Prime software download page.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 122 ) ; 0.00 % ( 0 / 122 )         ; 0.00 % ( 0 / 122 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 122 ) ; 0.00 % ( 0 / 122 )         ; 0.00 % ( 0 / 122 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 166 ) ; 0.00 % ( 0 / 166 )         ; 0.00 % ( 0 / 166 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 166 ) ; 0.00 % ( 0 / 166 )         ; 0.00 % ( 0 / 166 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -224,7 +226,7 @@ on the Quartus Prime software download page.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 122 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 166 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -240,14 +242,14 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 23 / 18,480        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 23                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 26 / 18,480        ; < 1 % ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 36 / 18,480        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 36                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 36 / 18,480        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 3                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 23                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 33                 ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 18,480         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18,480         ; 0 %   ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -256,16 +258,16 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 4 / 1,848          ; < 1 % ;
-;     -- Logic LABs                                           ; 4                  ;       ;
+; Total LABs:  partially or completely used                   ; 6 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 6                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 45                 ;       ;
+; Combinational ALUT usage for logic                          ; 71                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 7                  ;       ;
 ;     -- 5 input functions                                    ; 7                  ;       ;
-;     -- 4 input functions                                    ; 16                 ;       ;
-;     -- <=3 input functions                                  ; 15                 ;       ;
+;     -- 4 input functions                                    ; 39                 ;       ;
+;     -- <=3 input functions                                  ; 18                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 6                  ;       ;
@@ -277,13 +279,13 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 30 / 224           ; 13 %  ;
+; I/O pins                                                    ; 36 / 224           ; 16 %  ;
 ;     -- Clock pins                                           ; 2 / 9              ; 22 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; M10K blocks                                                 ; 1 / 308            ; < 1 % ;
 ; Total MLAB memory bits                                      ; 0                  ;       ;
-; Total block memory bits                                     ; 20 / 3,153,920     ; < 1 % ;
+; Total block memory bits                                     ; 1,024 / 3,153,920  ; < 1 % ;
 ; Total block memory implementation bits                      ; 10,240 / 3,153,920 ; < 1 % ;
 ;                                                             ;                    ;       ;
 ; Total DSP Blocks                                            ; 0 / 66             ; 0 %   ;
@@ -300,12 +302,12 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; Remote update blocks                                        ; 0 / 1              ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.4% / 0.2% ;       ;
-; Maximum fan-out                                             ; 60                 ;       ;
-; Highest non-global fan-out                                  ; 12                 ;       ;
-; Total fan-out                                               ; 185                ;       ;
-; Average fan-out                                             ; 1.64               ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.8% / 0.8% / 0.9% ;       ;
+; Maximum fan-out                                             ; 187                ;       ;
+; Highest non-global fan-out                                  ; 24                 ;       ;
+; Total fan-out                                               ; 229                ;       ;
+; Average fan-out                                             ; 1.52               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -314,14 +316,14 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 23 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 23                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 26 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 36 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 36                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 36 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 3                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 23                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 33                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -330,16 +332,16 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 4 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 4                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 6 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 6                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 45                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 71                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 7                    ; 0                              ;
 ;     -- 5 input functions                                    ; 7                    ; 0                              ;
-;     -- 4 input functions                                    ; 16                   ; 0                              ;
-;     -- <=3 input functions                                  ; 15                   ; 0                              ;
+;     -- 4 input functions                                    ; 39                   ; 0                              ;
+;     -- <=3 input functions                                  ; 18                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
@@ -355,9 +357,9 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
-; I/O pins                                                    ; 30                   ; 0                              ;
+; I/O pins                                                    ; 36                   ; 0                              ;
 ; I/O registers                                               ; 0                    ; 0                              ;
-; Total block memory bits                                     ; 20                   ; 0                              ;
+; Total block memory bits                                     ; 1024                 ; 0                              ;
 ; Total block memory implementation bits                      ; 10240                ; 0                              ;
 ; M10K block                                                  ; 1 / 308 ( < 1 % )    ; 0 / 308 ( 0 % )                ;
 ; Clock enable block                                          ; 1 / 104 ( < 1 % )    ; 0 / 104 ( 0 % )                ;
@@ -369,7 +371,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 233                  ; 0                              ;
+;     -- Total Connections                                    ; 371                  ; 0                              ;
 ;     -- Registered Connections                               ; 6                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -378,7 +380,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;                                                             ;                      ;                                ;
 ; Partition Interface                                         ;                      ;                                ;
 ;     -- Input Ports                                          ; 2                    ; 0                              ;
-;     -- Output Ports                                         ; 28                   ; 0                              ;
+;     -- Output Ports                                         ; 34                   ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Registered Ports                                            ;                      ;                                ;
@@ -403,7 +405,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; BRST ; U7    ; 3A       ; 10           ; 0            ; 91           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; CLK  ; W9    ; 3A       ; 11           ; 0            ; 34           ; 7                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; CLK  ; W9    ; 3A       ; 11           ; 0            ; 34           ; 8                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -440,6 +442,12 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; Disp35 ; U17   ; 4A       ; 52           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; Disp36 ; V18   ; 4A       ; 51           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; Disp37 ; V19   ; 4A       ; 51           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LD0    ; AA2   ; 2A       ; 0            ; 18           ; 77           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LD1    ; AA1   ; 2A       ; 0            ; 18           ; 94           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LD2    ; W2    ; 2A       ; 0            ; 18           ; 60           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LD3    ; Y3    ; 2A       ; 0            ; 18           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LD4    ; N2    ; 2A       ; 0            ; 19           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LD5    ; N1    ; 2A       ; 0            ; 19           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -448,7 +456,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 +----------+------------------+---------------+--------------+---------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
 +----------+------------------+---------------+--------------+---------------+
-; 2A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 2A       ; 6 / 16 ( 38 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 3A       ; 2 / 16 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 1 / 32 ( 3 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 4A       ; 27 / 48 ( 56 % ) ; 2.5V          ; --           ; 2.5V          ;
@@ -486,8 +494,8 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; A20      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A22      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA1      ; 29         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AA2      ; 31         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AA1      ; 29         ; 2A       ; LD1                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; AA2      ; 31         ; 2A       ; LD0                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; AA3      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA4      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA5      ; 53         ; 3A       ; ^AS_DATA2, DATA2                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -772,8 +780,8 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; M20      ; 179        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M21      ; 181        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M22      ; 175        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; N1       ; 24         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; N2       ; 26         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; N1       ; 24         ; 2A       ; LD5                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; N2       ; 26         ; 2A       ; LD4                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -905,7 +913,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; V21      ; 148        ; 4A       ; Disp02                          ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W1       ;            ; 2A       ; VREFB2AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; W2       ; 28         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; W2       ; 28         ; 2A       ; LD2                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; W3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W5       ; 54         ; 3A       ; #TDI                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -928,7 +936,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; W22      ; 140        ; 4A       ; Disp03                          ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y3       ; 30         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; Y3       ; 30         ; 2A       ; LD3                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; Y4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y6       ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -985,6 +993,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Disp36   ; Incomplete set of assignments ;
 ; Disp37   ; Incomplete set of assignments ;
 ; Disp12   ; Incomplete set of assignments ;
+; LD0      ; Incomplete set of assignments ;
+; LD1      ; Incomplete set of assignments ;
+; LD2      ; Incomplete set of assignments ;
+; LD3      ; Incomplete set of assignments ;
+; LD4      ; Incomplete set of assignments ;
+; LD5      ; Incomplete set of assignments ;
 ; CLK      ; Incomplete set of assignments ;
 ; BRST     ; Incomplete set of assignments ;
 +----------+-------------------------------+
@@ -995,20 +1009,24 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
 +-------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |miniCPU                                        ; 23.0 (0.5)           ; 25.5 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 45 (1)              ; 6 (0)                     ; 0 (0)         ; 20                ; 1     ; 0          ; 30   ; 0            ; |miniCPU                                                                                       ; miniCPU         ; work         ;
-;    |counter:inst3|                              ; 19.2 (12.7)          ; 21.7 (12.7)                      ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 37 (25)             ; 6 (6)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3                                                                         ; counter         ; work         ;
-;       |jmpr:inst0|                              ; 1.0 (1.0)            ; 2.0 (2.0)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst0                                                              ; jmpr            ; work         ;
-;       |jmpr:inst1|                              ; 0.8 (0.8)            ; 2.0 (2.0)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst1                                                              ; jmpr            ; work         ;
-;       |jmpr:inst2|                              ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst2                                                              ; jmpr            ; work         ;
-;       |jmpr:inst3|                              ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst3                                                              ; jmpr            ; work         ;
-;       |jmpr:inst4|                              ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst4                                                              ; jmpr            ; work         ;
-;       |jmpr:inst5|                              ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst5                                                              ; jmpr            ; work         ;
-;    |display:inst4|                              ; 3.3 (3.3)            ; 3.3 (3.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|display:inst4                                                                         ; display         ; work         ;
-;    |rom:inst2|                                  ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 20                ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2                                                                             ; rom             ; work         ;
-;       |lpm_rom:rom|                             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 20                ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom                                                                 ; lpm_rom         ; work         ;
-;          |altrom:srom|                          ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 20                ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom                                                     ; altrom          ; work         ;
-;             |altsyncram:rom_block|              ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 20                ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block                                ; altsyncram      ; work         ;
-;                |altsyncram_0a71:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 20                ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated ; altsyncram_0a71 ; work         ;
+; |miniCPU                                        ; 36.0 (0.5)           ; 36.0 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 71 (1)              ; 6 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 36   ; 0            ; |miniCPU                                                                                       ; miniCPU         ; work         ;
+;    |controlUnit:inst5|                          ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|controlUnit:inst5                                                                     ; controlUnit     ; work         ;
+;    |counter:inst3|                              ; 19.0 (11.0)          ; 19.0 (11.5)                      ; 0.0 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 37 (25)             ; 6 (6)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3                                                                         ; counter         ; work         ;
+;       |jmpr:inst0|                              ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst0                                                              ; jmpr            ; work         ;
+;       |jmpr:inst1|                              ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst1                                                              ; jmpr            ; work         ;
+;       |jmpr:inst2|                              ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst2                                                              ; jmpr            ; work         ;
+;       |jmpr:inst3|                              ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst3                                                              ; jmpr            ; work         ;
+;       |jmpr:inst4|                              ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst4                                                              ; jmpr            ; work         ;
+;       |jmpr:inst5|                              ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst5                                                              ; jmpr            ; work         ;
+;    |display:inst10|                             ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|display:inst10                                                                        ; display         ; work         ;
+;    |display:inst11|                             ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|display:inst11                                                                        ; display         ; work         ;
+;    |display:inst12|                             ; 4.5 (4.5)            ; 4.5 (4.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|display:inst12                                                                        ; display         ; work         ;
+;    |display:inst4|                              ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |miniCPU|display:inst4                                                                         ; display         ; work         ;
+;    |rom:inst2|                                  ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2                                                                             ; rom             ; work         ;
+;       |lpm_rom:rom|                             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom                                                                 ; lpm_rom         ; work         ;
+;          |altrom:srom|                          ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom                                                     ; altrom          ; work         ;
+;             |altsyncram:rom_block|              ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block                                ; altsyncram      ; work         ;
+;                |altsyncram_0a71:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated ; altsyncram_0a71 ; work         ;
 +-------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1046,6 +1064,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Disp36 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; Disp37 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; Disp12 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LD0    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LD1    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LD2    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LD3    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LD4    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LD5    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; CLK    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; BRST   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +--------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
@@ -1059,28 +1083,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK                                   ;                   ;         ;
 ;      - CLK~inputCLKENA0               ; 1                 ; 0       ;
 ; BRST                                  ;                   ;         ;
+;      - counter:inst3|jmpr:inst1|inst4 ; 0                 ; 0       ;
+;      - counter:inst3|jmpr:inst2|inst4 ; 0                 ; 0       ;
 ;      - counter:inst3|jmpr:inst3|inst4 ; 0                 ; 0       ;
 ;      - counter:inst3|jmpr:inst0|inst4 ; 0                 ; 0       ;
 ;      - counter:inst3|jmpr:inst4|inst4 ; 0                 ; 0       ;
 ;      - counter:inst3|jmpr:inst5|inst4 ; 0                 ; 0       ;
-;      - counter:inst3|jmpr:inst2|inst4 ; 0                 ; 0       ;
-;      - counter:inst3|jmpr:inst1|inst4 ; 0                 ; 0       ;
 +---------------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                     ;
-+------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                   ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLK                    ; PIN_W9             ; 7       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; counter:inst3|inst11~0 ; LABCELL_X41_Y3_N45 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; counter:inst3|inst12~0 ; LABCELL_X40_Y3_N21 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; counter:inst3|inst13~0 ; LABCELL_X41_Y3_N3  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; counter:inst3|inst14~0 ; LABCELL_X40_Y3_N54 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; counter:inst3|inst15~0 ; LABCELL_X41_Y3_N12 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; counter:inst3|inst6~0  ; MLABCELL_X42_Y3_N3 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-+------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                      ;
++------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                   ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLK                    ; PIN_W9              ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; counter:inst3|inst11~0 ; LABCELL_X44_Y4_N54  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; counter:inst3|inst12~0 ; MLABCELL_X45_Y4_N36 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; counter:inst3|inst13~0 ; LABCELL_X47_Y4_N15  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; counter:inst3|inst14~0 ; LABCELL_X47_Y4_N27  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; counter:inst3|inst15~0 ; MLABCELL_X45_Y4_N27 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; counter:inst3|inst6~0  ; LABCELL_X44_Y4_N42  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
++------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1088,43 +1112,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; CLK  ; PIN_W9   ; 7       ; Global Clock         ; GCLK6            ; --                        ;
+; CLK  ; PIN_W9   ; 8       ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-+--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
-; Name                                                                                             ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF                ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs          ;
-+--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
-; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 64           ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 1024 ; 2                           ; 10                          ; --                          ; --                          ; 20                  ; 1           ; 0     ; microcpu_teste.mif ; M10K_X38_Y3_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Unsupported Depth ;
-+--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+---------------+
+; Name                                                                                             ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF                ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
++--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+---------------+
+; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 64           ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 1024 ; 64                          ; 16                          ; --                          ; --                          ; 1024                ; 1           ; 0     ; microcpu_teste.mif ; M10K_X46_Y4_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; Yes           ;
++--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
-+-------------------------------------------------------+
-; Routing Usage Summary                                 ;
-+------------------------------+------------------------+
-; Routing Resource Type        ; Usage                  ;
-+------------------------------+------------------------+
-; Block interconnects          ; 61 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 0 / 6,048 ( 0 % )      ;
-; C2 interconnects             ; 5 / 54,648 ( < 1 % )   ;
-; C4 interconnects             ; 9 / 25,920 ( < 1 % )   ;
-; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
-; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
-; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
-; Direct links                 ; 26 / 140,056 ( < 1 % ) ;
-; Global clocks                ; 1 / 16 ( 6 % )         ;
-; Local interconnects          ; 25 / 36,960 ( < 1 % )  ;
-; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 3 / 5,984 ( < 1 % )    ;
-; R14/C12 interconnect drivers ; 3 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 21 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 21 / 127,072 ( < 1 % ) ;
-; Spine clocks                 ; 1 / 120 ( < 1 % )      ;
-; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
-+------------------------------+------------------------+
++--------------------------------------------------------+
+; Routing Usage Summary                                  ;
++------------------------------+-------------------------+
+; Routing Resource Type        ; Usage                   ;
++------------------------------+-------------------------+
+; Block interconnects          ; 118 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 2 / 6,048 ( < 1 % )     ;
+; C2 interconnects             ; 35 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 30 / 25,920 ( < 1 % )   ;
+; DQS bus muxes                ; 0 / 17 ( 0 % )          ;
+; DQS-18 I/O buses             ; 0 / 17 ( 0 % )          ;
+; DQS-9 I/O buses              ; 0 / 17 ( 0 % )          ;
+; Direct links                 ; 17 / 140,056 ( < 1 % )  ;
+; Global clocks                ; 1 / 16 ( 6 % )          ;
+; Local interconnects          ; 33 / 36,960 ( < 1 % )   ;
+; Quadrant clocks              ; 0 / 88 ( 0 % )          ;
+; R14 interconnects            ; 15 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 17 / 9,504 ( < 1 % )    ;
+; R3 interconnects             ; 52 / 60,192 ( < 1 % )   ;
+; R6 interconnects             ; 56 / 127,072 ( < 1 % )  ;
+; Spine clocks                 ; 2 / 120 ( 2 % )         ;
+; Wire stub REs                ; 0 / 7,344 ( 0 % )       ;
++------------------------------+-------------------------+
 
 
 +------------------------------------------+
@@ -1182,9 +1206,9 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 30        ; 0            ; 30        ; 0            ; 0            ; 30        ; 30        ; 0            ; 30        ; 30        ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 36        ; 0            ; 36        ; 0            ; 0            ; 36        ; 36        ; 0            ; 36        ; 36        ; 0            ; 34           ; 0            ; 0            ; 0            ; 0            ; 34           ; 0            ; 0            ; 0            ; 0            ; 34           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 30           ; 0         ; 30           ; 30           ; 0         ; 0         ; 30           ; 0         ; 0         ; 30           ; 2            ; 30           ; 30           ; 30           ; 30           ; 2            ; 30           ; 30           ; 30           ; 30           ; 2            ; 30           ; 30           ; 30           ; 30           ; 30           ; 30           ;
+; Total Inapplicable ; 0         ; 36           ; 0         ; 36           ; 36           ; 0         ; 0         ; 36           ; 0         ; 0         ; 36           ; 2            ; 36           ; 36           ; 36           ; 36           ; 2            ; 36           ; 36           ; 36           ; 36           ; 2            ; 36           ; 36           ; 36           ; 36           ; 36           ; 36           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Disp01             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; Disp02             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1214,6 +1238,12 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; Disp36             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; Disp37             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; Disp12             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; LD0                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; LD1                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; LD2                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; LD3                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; LD4                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; LD5                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; CLK                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; BRST               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
@@ -1267,32 +1297,25 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; CLK,I/O         ; CLK                  ; 1.3               ;
+; CLK             ; CLK                  ; 2.1               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                       ;
-+--------------------------------+--------------------------------+-------------------+
-; Source Register                ; Destination Register           ; Delay Added in ns ;
-+--------------------------------+--------------------------------+-------------------+
-; counter:inst3|inst12~_emulated ; counter:inst3|inst14~_emulated ; 0.268             ;
-; counter:inst3|inst12~1         ; counter:inst3|inst14~_emulated ; 0.247             ;
-; BRST                           ; counter:inst3|inst14~_emulated ; 0.247             ;
-; counter:inst3|inst13~_emulated ; counter:inst3|inst13~_emulated ; 0.220             ;
-; counter:inst3|inst14~_emulated ; counter:inst3|inst14~_emulated ; 0.212             ;
-; counter:inst3|inst15~_emulated ; counter:inst3|inst15~_emulated ; 0.184             ;
-; counter:inst3|inst13~1         ; counter:inst3|inst13~_emulated ; 0.162             ;
-; counter:inst3|inst14~1         ; counter:inst3|inst14~_emulated ; 0.126             ;
-; counter:inst3|inst15~1         ; counter:inst3|inst15~_emulated ; 0.092             ;
-; counter:inst3|inst11~_emulated ; counter:inst3|inst13~_emulated ; 0.057             ;
-; counter:inst3|inst11~1         ; counter:inst3|inst13~_emulated ; 0.057             ;
-; counter:inst3|inst6~_emulated  ; counter:inst3|inst6~_emulated  ; 0.033             ;
-; counter:inst3|inst6~1          ; counter:inst3|inst6~_emulated  ; 0.033             ;
-+--------------------------------+--------------------------------+-------------------+
-Note: This table only shows the top 13 path(s) that have the largest delay added for hold.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                               ;
++--------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                ; Destination Register                                                                                                   ; Delay Added in ns ;
++--------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------+
+; counter:inst3|inst12~_emulated ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ram_block1a11~porta_address_reg0 ; 0.442             ;
+; counter:inst3|inst15~_emulated ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ram_block1a11~porta_address_reg0 ; 0.429             ;
+; counter:inst3|inst13~_emulated ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ram_block1a11~porta_address_reg0 ; 0.317             ;
+; counter:inst3|inst11~_emulated ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ram_block1a11~porta_address_reg0 ; 0.297             ;
+; counter:inst3|inst6~_emulated  ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ram_block1a11~porta_address_reg0 ; 0.288             ;
+; counter:inst3|inst14~_emulated ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ram_block1a11~porta_address_reg0 ; 0.282             ;
++--------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 6 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1309,7 +1332,7 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): CLK~inputCLKENA0 with 16 fanout uses global clock CLKCTRL_G4
+    Info (11162): CLK~inputCLKENA0 with 23 fanout uses global clock CLKCTRL_G4
         Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
 Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
     Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver CLK~inputCLKENA0, placed at CLKCTRL_G4
@@ -1338,29 +1361,29 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:09
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:08
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X44_Y0 to location X54_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.43 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/output_files/miniCPU.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 6731 megabytes
-    Info: Processing ended: Thu Oct 15 15:38:57 2026
+    Info: Peak virtual memory: 6732 megabytes
+    Info: Processing ended: Thu Oct 15 17:52:42 2026
     Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:01:44
+    Info: Total CPU time (on all processors): 00:01:45
 
 
 +----------------------------+

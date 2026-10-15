@@ -32,6 +32,114 @@
 					"strict" : false
 				},
 				{
+					"name" : "Disp11",
+					"strict" : false
+				},
+				{
+					"name" : "Disp13",
+					"strict" : false
+				},
+				{
+					"name" : "Disp14",
+					"strict" : false
+				},
+				{
+					"name" : "Disp15",
+					"strict" : false
+				},
+				{
+					"name" : "Disp16",
+					"strict" : false
+				},
+				{
+					"name" : "Disp17",
+					"strict" : false
+				},
+				{
+					"name" : "Disp21",
+					"strict" : false
+				},
+				{
+					"name" : "Disp22",
+					"strict" : false
+				},
+				{
+					"name" : "Disp23",
+					"strict" : false
+				},
+				{
+					"name" : "Disp24",
+					"strict" : false
+				},
+				{
+					"name" : "Disp25",
+					"strict" : false
+				},
+				{
+					"name" : "Disp26",
+					"strict" : false
+				},
+				{
+					"name" : "Disp27",
+					"strict" : false
+				},
+				{
+					"name" : "Disp31",
+					"strict" : false
+				},
+				{
+					"name" : "Disp32",
+					"strict" : false
+				},
+				{
+					"name" : "Disp33",
+					"strict" : false
+				},
+				{
+					"name" : "Disp34",
+					"strict" : false
+				},
+				{
+					"name" : "Disp35",
+					"strict" : false
+				},
+				{
+					"name" : "Disp36",
+					"strict" : false
+				},
+				{
+					"name" : "Disp37",
+					"strict" : false
+				},
+				{
+					"name" : "Disp12",
+					"strict" : false
+				},
+				{
+					"name" : "LD0",
+					"strict" : false
+				},
+				{
+					"name" : "LD1",
+					"strict" : false
+				},
+				{
+					"name" : "LD2",
+					"strict" : false
+				},
+				{
+					"name" : "LD3",
+					"strict" : false
+				},
+				{
+					"name" : "LD4",
+					"strict" : false
+				},
+				{
+					"name" : "LD5",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
 					"strict" : false
 				},

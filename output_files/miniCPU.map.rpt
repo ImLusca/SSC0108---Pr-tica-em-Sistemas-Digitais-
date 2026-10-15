@@ -1,5 +1,5 @@
 Analysis & Synthesis report for miniCPU
-Thu Oct 15 15:38:30 2026
+Thu Oct 15 17:52:15 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -69,16 +69,16 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 15 15:38:30 2026           ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 15 17:52:15 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; miniCPU                                         ;
 ; Top-level Entity Name           ; miniCPU                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 6                                               ;
-; Total pins                      ; 30                                              ;
+; Total pins                      ; 36                                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 20                                              ;
+; Total block memory bits         ; 1,024                                           ;
 ; Total DSP Blocks                ; 0                                               ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -249,33 +249,33 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 26        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 44        ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 7         ;
-;     -- 5 input functions                    ; 7         ;
-;     -- 4 input functions                    ; 16        ;
-;     -- <=3 input functions                  ; 14        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 6         ;
-;                                             ;           ;
-; I/O pins                                    ; 30        ;
-; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 20        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 16        ;
-; Total fan-out                               ; 241       ;
-; Average fan-out                             ; 2.01      ;
-+---------------------------------------------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                 ;
++---------------------------------------------+-----------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                         ;
++---------------------------------------------+-----------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 39                                                                                            ;
+;                                             ;                                                                                               ;
+; Combinational ALUT usage for logic          ; 70                                                                                            ;
+;     -- 7 input functions                    ; 0                                                                                             ;
+;     -- 6 input functions                    ; 7                                                                                             ;
+;     -- 5 input functions                    ; 7                                                                                             ;
+;     -- 4 input functions                    ; 39                                                                                            ;
+;     -- <=3 input functions                  ; 17                                                                                            ;
+;                                             ;                                                                                               ;
+; Dedicated logic registers                   ; 6                                                                                             ;
+;                                             ;                                                                                               ;
+; I/O pins                                    ; 36                                                                                            ;
+; Total MLAB memory bits                      ; 0                                                                                             ;
+; Total block memory bits                     ; 1024                                                                                          ;
+;                                             ;                                                                                               ;
+; Total DSP Blocks                            ; 0                                                                                             ;
+;                                             ;                                                                                               ;
+; Maximum fan-out node                        ; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[15] ;
+; Maximum fan-out                             ; 24                                                                                            ;
+; Total fan-out                               ; 475                                                                                           ;
+; Average fan-out                             ; 2.90                                                                                          ;
++---------------------------------------------+-----------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -283,7 +283,8 @@ on the Quartus Prime software download page.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |miniCPU                                        ; 44 (0)              ; 6 (0)                     ; 20                ; 0          ; 30   ; 0            ; |miniCPU                                                                                       ; miniCPU         ; work         ;
+; |miniCPU                                        ; 70 (0)              ; 6 (0)                     ; 1024              ; 0          ; 36   ; 0            ; |miniCPU                                                                                       ; miniCPU         ; work         ;
+;    |controlUnit:inst5|                          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|controlUnit:inst5                                                                     ; controlUnit     ; work         ;
 ;    |counter:inst3|                              ; 37 (25)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3                                                                         ; counter         ; work         ;
 ;       |jmpr:inst0|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst0                                                              ; jmpr            ; work         ;
 ;       |jmpr:inst1|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst1                                                              ; jmpr            ; work         ;
@@ -291,12 +292,15 @@ on the Quartus Prime software download page.
 ;       |jmpr:inst3|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst3                                                              ; jmpr            ; work         ;
 ;       |jmpr:inst4|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst4                                                              ; jmpr            ; work         ;
 ;       |jmpr:inst5|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst5                                                              ; jmpr            ; work         ;
+;    |display:inst10|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|display:inst10                                                                        ; display         ; work         ;
+;    |display:inst11|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|display:inst11                                                                        ; display         ; work         ;
+;    |display:inst12|                             ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|display:inst12                                                                        ; display         ; work         ;
 ;    |display:inst4|                              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|display:inst4                                                                         ; display         ; work         ;
-;    |rom:inst2|                                  ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2                                                                             ; rom             ; work         ;
-;       |lpm_rom:rom|                             ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom                                                                 ; lpm_rom         ; work         ;
-;          |altrom:srom|                          ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom                                                     ; altrom          ; work         ;
-;             |altsyncram:rom_block|              ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block                                ; altsyncram      ; work         ;
-;                |altsyncram_0a71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated ; altsyncram_0a71 ; work         ;
+;    |rom:inst2|                                  ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2                                                                             ; rom             ; work         ;
+;       |lpm_rom:rom|                             ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom                                                                 ; lpm_rom         ; work         ;
+;          |altrom:srom|                          ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom                                                     ; altrom          ; work         ;
+;             |altsyncram:rom_block|              ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block                                ; altsyncram      ; work         ;
+;                |altsyncram_0a71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated ; altsyncram_0a71 ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -809,20 +813,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 6                           ;
 ;     CLR               ; 6                           ;
-; arriav_lcell_comb     ; 47                          ;
-;     normal            ; 47                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 16                          ;
+; arriav_lcell_comb     ; 74                          ;
+;     normal            ; 74                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 39                          ;
 ;         5 data inputs ; 7                           ;
 ;         6 data inputs ; 7                           ;
-; boundary_port         ; 30                          ;
-; stratixv_ram_block    ; 10                          ;
+; boundary_port         ; 36                          ;
+; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.17                        ;
+; Average LUT depth     ; 2.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -841,7 +844,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 15 15:38:24 2026
+    Info: Processing started: Thu Oct 15 17:52:09 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off miniCPU -c miniCPU
 Warning (125092): Tcl Script File mux2.qip not found
     Info (125063): set_global_assignment -name QIP_FILE mux2.qip
@@ -894,9 +897,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file res_mux
     Info (12023): Found entity 1: res_mux File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/res_mux.v Line: 40
 Info (12127): Elaborating entity "miniCPU" for the top level hierarchy
 Info (12128): Elaborating entity "display" for hierarchy "display:inst4"
-Info (12128): Elaborating entity "counter" for hierarchy "counter:inst3"
-Info (12128): Elaborating entity "jmpr" for hierarchy "counter:inst3|jmpr:inst1"
-Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:inst5"
 Info (12128): Elaborating entity "rom" for hierarchy "rom:inst2"
 Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming microcpu_teste.mif was intended to be a quoted string
 Info (12128): Elaborating entity "LPM_ROM" for hierarchy "rom:inst2|LPM_ROM:rom"
@@ -917,6 +917,9 @@ Info (12131): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom|altro
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0a71.tdf
     Info (12023): Found entity 1: altsyncram_0a71 File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_0a71" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "counter" for hierarchy "counter:inst3"
+Info (12128): Elaborating entity "jmpr" for hierarchy "counter:inst3|jmpr:inst1"
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:inst5"
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst"
 Info (12128): Elaborating entity "ula_mux" for hierarchy "ULA:inst|ula_mux:inst7"
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "ULA:inst|ula_mux:inst7|lpm_mux:LPM_MUX_component" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ULA/ula_mux.v Line: 73
@@ -988,19 +991,17 @@ Info (12133): Instantiated megafunction "cpumux:inst7|lpm_mux:LPM_MUX_component"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_sjc.tdf
     Info (12023): Found entity 1: mux_sjc File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/mux_sjc.tdf Line: 23
 Info (12128): Elaborating entity "mux_sjc" for hierarchy "cpumux:inst7|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[6]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 161
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[7]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 182
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[8]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 203
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[9]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 224
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[10]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 245
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[11]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 266
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[15]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[14]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[13]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[12]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[11]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[10]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[9]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[8]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[7]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[6]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[5]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[4]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[3]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
@@ -1008,46 +1009,23 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[1]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
     Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[0]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "counter:inst3|inst6" is converted into an equivalent circuit using register "counter:inst3|inst6~_emulated" and latch "counter:inst3|inst6~1"
+    Warning (13310): Register "counter:inst3|inst11" is converted into an equivalent circuit using register "counter:inst3|inst11~_emulated" and latch "counter:inst3|inst11~1"
     Warning (13310): Register "counter:inst3|inst12" is converted into an equivalent circuit using register "counter:inst3|inst12~_emulated" and latch "counter:inst3|inst12~1"
     Warning (13310): Register "counter:inst3|inst13" is converted into an equivalent circuit using register "counter:inst3|inst13~_emulated" and latch "counter:inst3|inst13~1"
     Warning (13310): Register "counter:inst3|inst14" is converted into an equivalent circuit using register "counter:inst3|inst14~_emulated" and latch "counter:inst3|inst14~1"
     Warning (13310): Register "counter:inst3|inst15" is converted into an equivalent circuit using register "counter:inst3|inst15~_emulated" and latch "counter:inst3|inst15~1"
-    Warning (13310): Register "counter:inst3|inst6" is converted into an equivalent circuit using register "counter:inst3|inst6~_emulated" and latch "counter:inst3|inst6~1"
-    Warning (13310): Register "counter:inst3|inst11" is converted into an equivalent circuit using register "counter:inst3|inst11~_emulated" and latch "counter:inst3|inst11~1"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Disp11" is stuck at GND
-    Warning (13410): Pin "Disp13" is stuck at VCC
-    Warning (13410): Pin "Disp14" is stuck at VCC
-    Warning (13410): Pin "Disp15" is stuck at GND
-    Warning (13410): Pin "Disp16" is stuck at GND
-    Warning (13410): Pin "Disp17" is stuck at GND
-    Warning (13410): Pin "Disp21" is stuck at GND
-    Warning (13410): Pin "Disp22" is stuck at VCC
-    Warning (13410): Pin "Disp23" is stuck at VCC
-    Warning (13410): Pin "Disp24" is stuck at VCC
-    Warning (13410): Pin "Disp25" is stuck at GND
-    Warning (13410): Pin "Disp26" is stuck at GND
-    Warning (13410): Pin "Disp27" is stuck at GND
-    Warning (13410): Pin "Disp31" is stuck at GND
-    Warning (13410): Pin "Disp32" is stuck at VCC
-    Warning (13410): Pin "Disp33" is stuck at VCC
-    Warning (13410): Pin "Disp34" is stuck at VCC
-    Warning (13410): Pin "Disp35" is stuck at GND
-    Warning (13410): Pin "Disp36" is stuck at GND
-    Warning (13410): Pin "Disp37" is stuck at GND
-    Warning (13410): Pin "Disp12" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 5 MSB VCC or GND address nodes from RAM block "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ALTSYNCRAM" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 32
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 44 logic cells
-    Info (21064): Implemented 10 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info (21059): Implemented 34 output pins
+    Info (21061): Implemented 70 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 48 warnings
     Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Thu Oct 15 15:38:30 2026
+    Info: Processing ended: Thu Oct 15 17:52:15 2026
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:13
 

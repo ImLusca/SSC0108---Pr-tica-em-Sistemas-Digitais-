@@ -735,12 +735,6 @@ on the Quartus Prime software download page.
 	(pt 552 624)
 )
 (connector
-	(text "D[3..0]" (rect 329 80 359 92)(font "Intel Clear" ))
-	(pt 328 96)
-	(pt 360 96)
-	(bus)
-)
-(connector
 	(text "CLK" (rect 329 104 349 116)(font "Intel Clear" ))
 	(pt 328 120)
 	(pt 368 120)
@@ -754,5 +748,11 @@ on the Quartus Prime software download page.
 	(text "OUT[3..0]" (rect 168 192 212 204)(font "Intel Clear" ))
 	(pt 200 208)
 	(pt 160 208)
+	(bus)
+)
+(connector
+	(text "D[3..0]" (rect 329 80 359 92)(font "Intel Clear" ))
+	(pt 368 96)
+	(pt 328 96)
 	(bus)
 )

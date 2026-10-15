@@ -1,7 +1,8 @@
 |miniCPU
 Disp01 <= display:inst4.a
-CLK => counter:inst3.CLK
 CLK => rom:inst2.CLK
+CLK => counter:inst3.CLK
+CLK => LD5.DATAIN
 CLK => regBank:inst1.CLK
 BRST => inst6.IN0
 Disp02 <= display:inst4.b
@@ -31,6 +32,12 @@ Disp35 <= display:inst12.e
 Disp36 <= display:inst12.f
 Disp37 <= display:inst12.g
 Disp12 <= display:inst10.b
+LD0 <= WRT_EN.DB_MAX_OUTPUT_PORT_TYPE
+LD1 <= ALUS[0].DB_MAX_OUTPUT_PORT_TYPE
+LD2 <= ALUS[1].DB_MAX_OUTPUT_PORT_TYPE
+LD3 <= JMP.DB_MAX_OUTPUT_PORT_TYPE
+LD4 <= RST.DB_MAX_OUTPUT_PORT_TYPE
+LD5 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |miniCPU|display:inst4
@@ -45,145 +52,6 @@ d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
 f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|miniCPU|counter:inst3
-S[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-S[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-S[5] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-Addr[0] => jmpr:inst1.Op
-Addr[1] => jmpr:inst2.Op
-Addr[2] => jmpr:inst3.Op
-Addr[3] => jmpr:inst0.Op
-Addr[4] => jmpr:inst4.Op
-Addr[5] => jmpr:inst5.Op
-JMP => jmpr:inst1.Jmp
-JMP => jmpr:inst2.Jmp
-JMP => jmpr:inst3.Jmp
-JMP => jmpr:inst0.Jmp
-JMP => jmpr:inst4.Jmp
-JMP => jmpr:inst5.Jmp
-CLR => inst.IN0
-CLK => inst6.CLK
-CLK => inst11.CLK
-CLK => inst12.CLK
-CLK => inst13.CLK
-CLK => inst14.CLK
-CLK => inst15.CLK
-
-
-|miniCPU|counter:inst3|jmpr:inst1
-Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Jmp => inst.IN0
-Jmp => inst2.IN0
-Op => inst.IN1
-Op => inst3.IN0
-Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Clr => inst4.IN1
-
-
-|miniCPU|counter:inst3|jmpr:inst2
-Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Jmp => inst.IN0
-Jmp => inst2.IN0
-Op => inst.IN1
-Op => inst3.IN0
-Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Clr => inst4.IN1
-
-
-|miniCPU|counter:inst3|jmpr:inst3
-Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Jmp => inst.IN0
-Jmp => inst2.IN0
-Op => inst.IN1
-Op => inst3.IN0
-Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Clr => inst4.IN1
-
-
-|miniCPU|counter:inst3|jmpr:inst0
-Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Jmp => inst.IN0
-Jmp => inst2.IN0
-Op => inst.IN1
-Op => inst3.IN0
-Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Clr => inst4.IN1
-
-
-|miniCPU|counter:inst3|jmpr:inst4
-Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Jmp => inst.IN0
-Jmp => inst2.IN0
-Op => inst.IN1
-Op => inst3.IN0
-Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Clr => inst4.IN1
-
-
-|miniCPU|counter:inst3|jmpr:inst5
-Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Jmp => inst.IN0
-Jmp => inst2.IN0
-Op => inst.IN1
-Op => inst3.IN0
-Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Clr => inst4.IN1
-
-
-|miniCPU|controlUnit:inst5
-Instr[0] => JumpAddr[0].DATAIN
-Instr[0] => Immediate[0].DATAIN
-Instr[1] => JumpAddr[1].DATAIN
-Instr[1] => Immediate[1].DATAIN
-Instr[2] => JumpAddr[2].DATAIN
-Instr[2] => Immediate[2].DATAIN
-Instr[3] => JumpAddr[3].DATAIN
-Instr[3] => Immediate[3].DATAIN
-Instr[4] => JumpAddr[4].DATAIN
-Instr[5] => JumpAddr[5].DATAIN
-Instr[6] => ReadB[0].DATAIN
-Instr[7] => ReadB[1].DATAIN
-Instr[8] => ReadA[0].DATAIN
-Instr[9] => ReadA[1].DATAIN
-Instr[10] => RegTo[0].DATAIN
-Instr[11] => RegTo[1].DATAIN
-Instr[12] => Decoder0.IN3
-Instr[12] => Decoder2.IN1
-Instr[13] => Decoder0.IN2
-Instr[13] => Decoder1.IN1
-Instr[14] => Decoder0.IN1
-Instr[15] => Decoder0.IN0
-Instr[15] => Decoder1.IN0
-Instr[15] => Decoder2.IN0
-RegTo[0] <= Instr[10].DB_MAX_OUTPUT_PORT_TYPE
-RegTo[1] <= Instr[11].DB_MAX_OUTPUT_PORT_TYPE
-ReadA[0] <= Instr[8].DB_MAX_OUTPUT_PORT_TYPE
-ReadA[1] <= Instr[9].DB_MAX_OUTPUT_PORT_TYPE
-ReadB[0] <= Instr[6].DB_MAX_OUTPUT_PORT_TYPE
-ReadB[1] <= Instr[7].DB_MAX_OUTPUT_PORT_TYPE
-WRT_EN <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-AluSelect[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
-AluSelect[1] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
-UseImmediate <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-WriteSource[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-WriteSource[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-Immediate[0] <= Instr[0].DB_MAX_OUTPUT_PORT_TYPE
-Immediate[1] <= Instr[1].DB_MAX_OUTPUT_PORT_TYPE
-Immediate[2] <= Instr[2].DB_MAX_OUTPUT_PORT_TYPE
-Immediate[3] <= Instr[3].DB_MAX_OUTPUT_PORT_TYPE
-JMP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-JumpAddr[0] <= Instr[0].DB_MAX_OUTPUT_PORT_TYPE
-JumpAddr[1] <= Instr[1].DB_MAX_OUTPUT_PORT_TYPE
-JumpAddr[2] <= Instr[2].DB_MAX_OUTPUT_PORT_TYPE
-JumpAddr[3] <= Instr[3].DB_MAX_OUTPUT_PORT_TYPE
-JumpAddr[4] <= Instr[4].DB_MAX_OUTPUT_PORT_TYPE
-JumpAddr[5] <= Instr[5].DB_MAX_OUTPUT_PORT_TYPE
-RST <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |miniCPU|rom:inst2
@@ -474,6 +342,150 @@ q_a[12] <= ram_block1a12.PORTADATAOUT
 q_a[13] <= ram_block1a13.PORTADATAOUT
 q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
+
+
+|miniCPU|counter:inst3
+S[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Addr[0] => jmpr:inst1.Op
+Addr[1] => jmpr:inst2.Op
+Addr[2] => jmpr:inst3.Op
+Addr[3] => jmpr:inst0.Op
+Addr[4] => jmpr:inst4.Op
+Addr[5] => jmpr:inst5.Op
+JMP => jmpr:inst1.Jmp
+JMP => jmpr:inst2.Jmp
+JMP => jmpr:inst3.Jmp
+JMP => jmpr:inst0.Jmp
+JMP => jmpr:inst4.Jmp
+JMP => jmpr:inst5.Jmp
+CLR => jmpr:inst1.Clr
+CLR => jmpr:inst2.Clr
+CLR => jmpr:inst3.Clr
+CLR => jmpr:inst0.Clr
+CLR => jmpr:inst4.Clr
+CLR => jmpr:inst5.Clr
+CLK => inst6.CLK
+CLK => inst11.CLK
+CLK => inst12.CLK
+CLK => inst13.CLK
+CLK => inst14.CLK
+CLK => inst15.CLK
+
+
+|miniCPU|counter:inst3|jmpr:inst1
+Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Jmp => inst.IN0
+Jmp => inst2.IN0
+Op => inst.IN1
+Op => inst3.IN0
+Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Clr => inst4.IN1
+
+
+|miniCPU|counter:inst3|jmpr:inst2
+Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Jmp => inst.IN0
+Jmp => inst2.IN0
+Op => inst.IN1
+Op => inst3.IN0
+Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Clr => inst4.IN1
+
+
+|miniCPU|counter:inst3|jmpr:inst3
+Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Jmp => inst.IN0
+Jmp => inst2.IN0
+Op => inst.IN1
+Op => inst3.IN0
+Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Clr => inst4.IN1
+
+
+|miniCPU|counter:inst3|jmpr:inst0
+Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Jmp => inst.IN0
+Jmp => inst2.IN0
+Op => inst.IN1
+Op => inst3.IN0
+Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Clr => inst4.IN1
+
+
+|miniCPU|counter:inst3|jmpr:inst4
+Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Jmp => inst.IN0
+Jmp => inst2.IN0
+Op => inst.IN1
+Op => inst3.IN0
+Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Clr => inst4.IN1
+
+
+|miniCPU|counter:inst3|jmpr:inst5
+Set <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Jmp => inst.IN0
+Jmp => inst2.IN0
+Op => inst.IN1
+Op => inst3.IN0
+Clear <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Clr => inst4.IN1
+
+
+|miniCPU|controlUnit:inst5
+Instr[0] => JumpAddr[0].DATAIN
+Instr[0] => Immediate[0].DATAIN
+Instr[1] => JumpAddr[1].DATAIN
+Instr[1] => Immediate[1].DATAIN
+Instr[2] => JumpAddr[2].DATAIN
+Instr[2] => Immediate[2].DATAIN
+Instr[3] => JumpAddr[3].DATAIN
+Instr[3] => Immediate[3].DATAIN
+Instr[4] => JumpAddr[4].DATAIN
+Instr[5] => JumpAddr[5].DATAIN
+Instr[6] => ReadB[0].DATAIN
+Instr[7] => ReadB[1].DATAIN
+Instr[8] => ReadA[0].DATAIN
+Instr[9] => ReadA[1].DATAIN
+Instr[10] => RegTo[0].DATAIN
+Instr[11] => RegTo[1].DATAIN
+Instr[12] => Decoder0.IN3
+Instr[12] => Decoder2.IN1
+Instr[13] => Decoder0.IN2
+Instr[13] => Decoder1.IN1
+Instr[14] => Decoder0.IN1
+Instr[15] => Decoder0.IN0
+Instr[15] => Decoder1.IN0
+Instr[15] => Decoder2.IN0
+RegTo[0] <= Instr[10].DB_MAX_OUTPUT_PORT_TYPE
+RegTo[1] <= Instr[11].DB_MAX_OUTPUT_PORT_TYPE
+ReadA[0] <= Instr[8].DB_MAX_OUTPUT_PORT_TYPE
+ReadA[1] <= Instr[9].DB_MAX_OUTPUT_PORT_TYPE
+ReadB[0] <= Instr[6].DB_MAX_OUTPUT_PORT_TYPE
+ReadB[1] <= Instr[7].DB_MAX_OUTPUT_PORT_TYPE
+WRT_EN <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+AluSelect[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+AluSelect[1] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+UseImmediate <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+WriteSource[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+WriteSource[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Immediate[0] <= Instr[0].DB_MAX_OUTPUT_PORT_TYPE
+Immediate[1] <= Instr[1].DB_MAX_OUTPUT_PORT_TYPE
+Immediate[2] <= Instr[2].DB_MAX_OUTPUT_PORT_TYPE
+Immediate[3] <= Instr[3].DB_MAX_OUTPUT_PORT_TYPE
+JMP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JumpAddr[0] <= Instr[0].DB_MAX_OUTPUT_PORT_TYPE
+JumpAddr[1] <= Instr[1].DB_MAX_OUTPUT_PORT_TYPE
+JumpAddr[2] <= Instr[2].DB_MAX_OUTPUT_PORT_TYPE
+JumpAddr[3] <= Instr[3].DB_MAX_OUTPUT_PORT_TYPE
+JumpAddr[4] <= Instr[4].DB_MAX_OUTPUT_PORT_TYPE
+JumpAddr[5] <= Instr[5].DB_MAX_OUTPUT_PORT_TYPE
+RST <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |miniCPU|display:inst10

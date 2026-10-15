@@ -86,7 +86,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 376 200 552 216)
+	(rect 376 184 552 200)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "S[5..0]" (rect 90 0 123 10)(font "Arial" ))
 	(pt 0 8)
@@ -98,31 +98,6 @@ on the Quartus Prime software download page.
 		(line (pt 78 4)(pt 82 8))
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
-	)
-)
-(symbol
-	(rect 480 120 528 152)
-	(text "NOT" (rect 1 0 21 9)(font "Arial" (font_size 6)))
-	(text "inst" (rect 3 21 20 31)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 18)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 18)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 18)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 18)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
 	)
 )
 (symbol
@@ -506,7 +481,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 728 448 792 528)
+	(rect 728 456 792 536)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -556,7 +531,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 848 448 912 528)
+	(rect 848 456 912 536)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst14" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -606,7 +581,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 960 448 1024 528)
+	(rect 960 456 1024 536)
 	(text "TFF" (rect 1 0 18 9)(font "Arial" (font_size 6)))
 	(text "inst15" (rect 3 68 31 80)(font "Intel Clear" ))
 	(port
@@ -931,12 +906,6 @@ on the Quartus Prime software download page.
 	(pt 504 344)
 )
 (connector
-	(text "S[5..0]" (rect 330 192 359 204)(font "Intel Clear" ))
-	(pt 376 208)
-	(pt 320 208)
-	(bus)
-)
-(connector
 	(text "ST1" (rect 488 431 500 448)(font "Intel Clear" )(vertical))
 	(pt 504 456)
 	(pt 504 440)
@@ -980,81 +949,6 @@ on the Quartus Prime software download page.
 	(text "I2" (rect 594 464 602 476)(font "Intel Clear" ))
 	(pt 600 480)
 	(pt 584 480)
-)
-(connector
-	(text "ST3" (rect 744 423 756 440)(font "Intel Clear" )(vertical))
-	(pt 760 448)
-	(pt 760 432)
-)
-(connector
-	(text "CL3" (rect 744 534 756 552)(font "Intel Clear" )(vertical))
-	(pt 760 528)
-	(pt 760 560)
-)
-(connector
-	(text "CLK" (rect 714 472 734 484)(font "Intel Clear" ))
-	(pt 728 488)
-	(pt 704 488)
-)
-(connector
-	(text "S3" (rect 802 456 813 468)(font "Intel Clear" ))
-	(pt 792 472)
-	(pt 808 472)
-)
-(connector
-	(text "I3" (rect 706 456 714 468)(font "Intel Clear" ))
-	(pt 696 472)
-	(pt 728 472)
-)
-(connector
-	(text "ST4" (rect 864 423 876 440)(font "Intel Clear" )(vertical))
-	(pt 880 448)
-	(pt 880 432)
-)
-(connector
-	(text "CL4" (rect 864 534 876 552)(font "Intel Clear" )(vertical))
-	(pt 880 528)
-	(pt 880 560)
-)
-(connector
-	(text "S4" (rect 912 456 923 468)(font "Intel Clear" ))
-	(pt 912 472)
-	(pt 920 472)
-)
-(connector
-	(text "CLK" (rect 832 472 852 484)(font "Intel Clear" ))
-	(pt 832 488)
-	(pt 848 488)
-)
-(connector
-	(text "I4" (rect 834 448 842 460)(font "Intel Clear" ))
-	(pt 848 472)
-	(pt 832 472)
-)
-(connector
-	(text "ST5" (rect 976 431 988 448)(font "Intel Clear" )(vertical))
-	(pt 992 448)
-	(pt 992 432)
-)
-(connector
-	(text "CL5" (rect 976 526 988 544)(font "Intel Clear" )(vertical))
-	(pt 992 528)
-	(pt 992 552)
-)
-(connector
-	(text "S5" (rect 1034 456 1045 468)(font "Intel Clear" ))
-	(pt 1024 472)
-	(pt 1040 472)
-)
-(connector
-	(text "CLK" (rect 944 472 964 484)(font "Intel Clear" ))
-	(pt 944 488)
-	(pt 960 488)
-)
-(connector
-	(text "I5" (rect 946 456 954 468)(font "Intel Clear" ))
-	(pt 944 472)
-	(pt 960 472)
 )
 (connector
 	(text "S1" (rect 538 464 549 476)(font "Intel Clear" ))
@@ -1182,11 +1076,6 @@ on the Quartus Prime software download page.
 	(pt 1088 304)
 )
 (connector
-	(text "NCLR" (rect 538 120 565 132)(font "Intel Clear" ))
-	(pt 544 136)
-	(pt 528 136)
-)
-(connector
 	(text "NCLR" (rect 658 96 685 108)(font "Intel Clear" ))
 	(pt 648 112)
 	(pt 672 112)
@@ -1215,4 +1104,90 @@ on the Quartus Prime software download page.
 	(text "NCLR" (rect 930 304 957 316)(font "Intel Clear" ))
 	(pt 920 320)
 	(pt 944 320)
+)
+(connector
+	(text "S[5..0]" (rect 330 176 359 188)(font "Intel Clear" ))
+	(pt 376 192)
+	(pt 320 192)
+	(bus)
+)
+(connector
+	(text "CL3" (rect 744 542 756 560)(font "Intel Clear" )(vertical))
+	(pt 760 536)
+	(pt 760 568)
+)
+(connector
+	(text "CLK" (rect 714 480 734 492)(font "Intel Clear" ))
+	(pt 728 496)
+	(pt 704 496)
+)
+(connector
+	(text "S3" (rect 802 464 813 476)(font "Intel Clear" ))
+	(pt 792 480)
+	(pt 808 480)
+)
+(connector
+	(text "I3" (rect 706 464 714 476)(font "Intel Clear" ))
+	(pt 696 480)
+	(pt 728 480)
+)
+(connector
+	(text "CL4" (rect 864 542 876 560)(font "Intel Clear" )(vertical))
+	(pt 880 536)
+	(pt 880 568)
+)
+(connector
+	(text "S4" (rect 912 464 923 476)(font "Intel Clear" ))
+	(pt 912 480)
+	(pt 920 480)
+)
+(connector
+	(text "CLK" (rect 832 480 852 492)(font "Intel Clear" ))
+	(pt 832 496)
+	(pt 848 496)
+)
+(connector
+	(text "I4" (rect 834 456 842 468)(font "Intel Clear" ))
+	(pt 848 480)
+	(pt 832 480)
+)
+(connector
+	(text "CL5" (rect 976 534 988 552)(font "Intel Clear" )(vertical))
+	(pt 992 536)
+	(pt 992 560)
+)
+(connector
+	(text "S5" (rect 1034 464 1045 476)(font "Intel Clear" ))
+	(pt 1024 480)
+	(pt 1040 480)
+)
+(connector
+	(text "CLK" (rect 944 480 964 492)(font "Intel Clear" ))
+	(pt 944 496)
+	(pt 960 496)
+)
+(connector
+	(text "I5" (rect 946 464 954 476)(font "Intel Clear" ))
+	(pt 944 480)
+	(pt 960 480)
+)
+(connector
+	(text "ST3" (rect 744 431 756 448)(font "Intel Clear" )(vertical))
+	(pt 760 440)
+	(pt 760 456)
+)
+(connector
+	(text "ST4" (rect 864 431 876 448)(font "Intel Clear" )(vertical))
+	(pt 880 440)
+	(pt 880 456)
+)
+(connector
+	(text "ST5" (rect 976 439 988 456)(font "Intel Clear" )(vertical))
+	(pt 992 440)
+	(pt 992 456)
+)
+(connector
+	(text "NCLR" (rect 538 120 565 132)(font "Intel Clear" ))
+	(pt 480 136)
+	(pt 544 136)
 )
