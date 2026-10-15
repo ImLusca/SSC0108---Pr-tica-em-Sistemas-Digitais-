@@ -24,7 +24,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 160 88 328 104)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "Data[3..0]" (rect 5 0 55 10)(font "Arial" ))
+	(text "Data[3..0]" (rect 5 0 54 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 160 112 328 128)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 26 12)(font "Intel Clear" ))
+	(text "CLK" (rect 5 0 25 12)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 160 136 328 152)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "CLR" (rect 5 0 26 12)(font "Intel Clear" ))
+	(text "CLR" (rect 5 0 25 12)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -72,7 +72,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 160 160 328 176)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 34 12)(font "Intel Clear" ))
+	(text "LOAD" (rect 5 0 33 12)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -86,7 +86,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 160 200 336 216)
+	(rect 200 200 376 216)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "OUT[3..0]" (rect 90 0 138 10)(font "Arial" ))
 	(pt 0 8)
@@ -733,4 +733,26 @@ on the Quartus Prime software download page.
 	(text "OUT3" (rect 522 608 549 620)(font "Intel Clear" ))
 	(pt 512 624)
 	(pt 552 624)
+)
+(connector
+	(text "D[3..0]" (rect 329 80 359 92)(font "Intel Clear" ))
+	(pt 328 96)
+	(pt 360 96)
+	(bus)
+)
+(connector
+	(text "CLK" (rect 329 104 349 116)(font "Intel Clear" ))
+	(pt 328 120)
+	(pt 368 120)
+)
+(connector
+	(text "LOAD" (rect 336 152 364 164)(font "Intel Clear" ))
+	(pt 328 168)
+	(pt 368 168)
+)
+(connector
+	(text "OUT[3..0]" (rect 168 192 212 204)(font "Intel Clear" ))
+	(pt 200 208)
+	(pt 160 208)
+	(bus)
 )

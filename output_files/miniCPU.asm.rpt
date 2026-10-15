@@ -1,5 +1,5 @@
 Assembler report for miniCPU
-Thu Oct 15 13:34:54 2026
+Thu Oct 15 15:39:00 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 15 13:34:54 2026 ;
+; Assembler Status      ; Successful - Thu Oct 15 15:39:00 2026 ;
 ; Revision Name         ; miniCPU                               ;
 ; Top-level Entity Name ; miniCPU                               ;
 ; Family                ; Cyclone V                             ;
@@ -67,8 +67,8 @@ on the Quartus Prime software download page.
 +----------------+--------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                      ;
 +----------------+--------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x004DD9D2                                                                                                   ;
-; Checksum       ; 0x004DD9D2                                                                                                   ;
+; JTAG usercode  ; 0x0053AEE0                                                                                                   ;
+; Checksum       ; 0x0053AEE0                                                                                                   ;
 +----------------+--------------------------------------------------------------------------------------------------------------+
 
 
@@ -78,7 +78,7 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 15 13:34:52 2026
+    Info: Processing started: Thu Oct 15 15:38:58 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off miniCPU -c miniCPU
 Warning (125092): Tcl Script File mux2.qip not found
     Info (125063): set_global_assignment -name QIP_FILE mux2.qip
@@ -86,7 +86,7 @@ Warning (18236): Number of processors has not been specified which may cause ove
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4988 megabytes
-    Info: Processing ended: Thu Oct 15 13:34:54 2026
+    Info: Processing ended: Thu Oct 15 15:39:00 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

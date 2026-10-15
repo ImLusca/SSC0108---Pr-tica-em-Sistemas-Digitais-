@@ -1,0 +1,13 @@
+WIDTH=16;
+DEPTH=64;
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    00 : 9005;  -- MOVI 5 -> R0
+    01 : 9403;  -- MOVI 3 -> R1
+    02 : 0840;  -- ADD R0, R1 -> R2 (5 + 3 = 8)
+    03 : 6D02;  -- MULI R1, 2 -> R3 (3 * 2 = 6)
+    04 : A004;  -- JMP 04 (loop)
+    [05..3F] : F000;  -- unused opcode / no write
+END;

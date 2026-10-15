@@ -2,7 +2,44 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "Disp01",
+					"strict" : false
+				},
+				{
+					"name" : "Disp02",
+					"strict" : false
+				},
+				{
+					"name" : "Disp03",
+					"strict" : false
+				},
+				{
+					"name" : "Disp04",
+					"strict" : false
+				},
+				{
+					"name" : "Disp05",
+					"strict" : false
+				},
+				{
+					"name" : "Disp06",
+					"strict" : false
+				},
+				{
+					"name" : "Disp07",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "BRST",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

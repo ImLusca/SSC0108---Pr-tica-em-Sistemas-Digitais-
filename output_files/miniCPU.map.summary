@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Oct 15 13:34:33 2026
+Analysis & Synthesis Status : Successful - Thu Oct 15 15:38:30 2026
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : miniCPU
 Top-level Entity Name : miniCPU
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 8
+Total registers : 6
+Total pins : 30
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 20
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -117,7 +117,7 @@ on the Quartus Prime software download page.
 	)
 	(parameter
 		"LPM_FILE"
-		"Mif.mif"
+		"microcpu_teste.mif"
 		"File containing initial contents of memory array"
 	)
 	(parameter
@@ -149,7 +149,7 @@ on the Quartus Prime software download page.
 		(line (pt 96 80)(pt 96 16))
 		(line (pt 16 80)(pt 16 16))
 	)
-	(annotation_block (parameter)(rect 568 96 836 194))
+	(annotation_block (parameter)(rect 568 96 841 194))
 )
 (connector
 	(pt 456 224)

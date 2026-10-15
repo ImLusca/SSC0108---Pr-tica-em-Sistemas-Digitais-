@@ -1,5 +1,5 @@
 Analysis & Synthesis report for miniCPU
-Thu Oct 15 13:34:33 2026
+Thu Oct 15 15:38:30 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -13,37 +13,36 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Source assignments for rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. General Register Statistics
+ 11. Source assignments for rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated
+ 12. Parameter Settings for User Entity Instance: rom:inst2|LPM_ROM:rom
  13. Parameter Settings for User Entity Instance: ULA:inst|ula_mux:inst7|lpm_mux:LPM_MUX_component
  14. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst|mux2:inst|lpm_mux:LPM_MUX_component
  15. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst|mux2:inst11|lpm_mux:LPM_MUX_component
  16. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst|mux2:inst13|lpm_mux:LPM_MUX_component
  17. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst|mux2:inst12|lpm_mux:LPM_MUX_component
  18. Parameter Settings for User Entity Instance: regBank:inst1|decoder:inst3|lpm_decode:LPM_DECODE_component
- 19. Parameter Settings for User Entity Instance: regBank:inst1|bankmux:inst11|lpm_mux:LPM_MUX_component
- 20. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst|lpm_mux:LPM_MUX_component
- 21. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst11|lpm_mux:LPM_MUX_component
- 22. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst13|lpm_mux:LPM_MUX_component
- 23. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst12|lpm_mux:LPM_MUX_component
- 24. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst|lpm_mux:LPM_MUX_component
- 25. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst11|lpm_mux:LPM_MUX_component
- 26. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst13|lpm_mux:LPM_MUX_component
- 27. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst12|lpm_mux:LPM_MUX_component
- 28. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst|lpm_mux:LPM_MUX_component
- 29. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst11|lpm_mux:LPM_MUX_component
- 30. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst13|lpm_mux:LPM_MUX_component
- 31. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst12|lpm_mux:LPM_MUX_component
+ 19. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst|lpm_mux:LPM_MUX_component
+ 20. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst11|lpm_mux:LPM_MUX_component
+ 21. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst13|lpm_mux:LPM_MUX_component
+ 22. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst12|lpm_mux:LPM_MUX_component
+ 23. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst|lpm_mux:LPM_MUX_component
+ 24. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst11|lpm_mux:LPM_MUX_component
+ 25. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst13|lpm_mux:LPM_MUX_component
+ 26. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst5|mux2:inst12|lpm_mux:LPM_MUX_component
+ 27. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst|lpm_mux:LPM_MUX_component
+ 28. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst11|lpm_mux:LPM_MUX_component
+ 29. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst13|lpm_mux:LPM_MUX_component
+ 30. Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst12|lpm_mux:LPM_MUX_component
+ 31. Parameter Settings for User Entity Instance: regBank:inst1|bankmux:inst11|lpm_mux:LPM_MUX_component
  32. Parameter Settings for User Entity Instance: regBank:inst1|bankmux:inst12|lpm_mux:LPM_MUX_component
- 33. Parameter Settings for User Entity Instance: rom:inst2|LPM_ROM:rom
- 34. Parameter Settings for User Entity Instance: res_mux:inst8|lpm_mux:LPM_MUX_component
- 35. Parameter Settings for User Entity Instance: cpumux:inst7|lpm_mux:LPM_MUX_component
- 36. Post-Synthesis Netlist Statistics for Top Partition
- 37. Elapsed Time Per Partition
- 38. Analysis & Synthesis Messages
+ 33. Parameter Settings for User Entity Instance: res_mux:inst8|lpm_mux:LPM_MUX_component
+ 34. Parameter Settings for User Entity Instance: cpumux:inst7|lpm_mux:LPM_MUX_component
+ 35. Post-Synthesis Netlist Statistics for Top Partition
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -70,16 +69,16 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 15 13:34:33 2026           ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 15 15:38:30 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; miniCPU                                         ;
 ; Top-level Entity Name           ; miniCPU                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 8                                               ;
+; Total registers                 ; 6                                               ;
+; Total pins                      ; 30                                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0                                               ;
+; Total block memory bits         ; 20                                              ;
 ; Total DSP Blocks                ; 0                                               ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -186,10 +185,11 @@ on the Quartus Prime software download page.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -205,7 +205,6 @@ on the Quartus Prime software download page.
 ; ULA/multiplicador/mul2.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ULA/multiplicador/mul2.bdf ;         ;
 ; ULA/ULA.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ULA/ULA.bdf                ;         ;
 ; ROM/rom.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ROM/rom.bdf                ;         ;
-; ROM/Mif.mif                      ; yes             ; User Memory Initialization File    ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ROM/Mif.mif                ;         ;
 ; miniCPU.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/miniCPU.bdf                ;         ;
 ; REGISTER/mux2.v                  ; yes             ; User Wizard-Generated File         ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/REGISTER/mux2.v            ;         ;
 ; REGISTER/reg4.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/REGISTER/reg4.bdf          ;         ;
@@ -220,20 +219,10 @@ on the Quartus Prime software download page.
 ; UC/UC.v                          ; yes             ; User Verilog HDL File              ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/UC/UC.v                    ;         ;
 ; cpumux.v                         ; yes             ; User Wizard-Generated File         ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/cpumux.v                   ;         ;
 ; res_mux.v                        ; yes             ; User Wizard-Generated File         ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/res_mux.v                  ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.tdf                                 ;         ;
-; aglobal241.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                              ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/muxlut.inc                                  ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/bypassff.inc                                ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altshift.inc                                ;         ;
-; db/mux_vjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/mux_vjc.tdf             ;         ;
-; db/mux_pjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/mux_pjc.tdf             ;         ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.tdf                              ;         ;
-; declut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/declut.inc                                  ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_compare.inc                             ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_constant.inc                            ;         ;
-; db/decode_r3f.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/decode_r3f.tdf          ;         ;
+; ROM/microcpu_teste.mif           ; yes             ; User Memory Initialization File    ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ROM/microcpu_teste.mif     ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf                                 ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                  ;         ;
+; aglobal241.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                              ;         ;
 ; altrom.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf                                  ;         ;
 ; memmodes.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/others/maxplus2/memmodes.inc                              ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                              ;         ;
@@ -244,46 +233,81 @@ on the Quartus Prime software download page.
 ; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                               ;         ;
 ; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                  ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                ;         ;
-; db/altsyncram_m461.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf     ;         ;
+; db/altsyncram_0a71.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf     ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.tdf                                 ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/muxlut.inc                                  ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/bypassff.inc                                ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altshift.inc                                ;         ;
+; db/mux_vjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/mux_vjc.tdf             ;         ;
+; db/mux_pjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/mux_pjc.tdf             ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.tdf                              ;         ;
+; declut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/declut.inc                                  ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_compare.inc                             ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_constant.inc                            ;         ;
+; db/decode_r3f.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/decode_r3f.tdf          ;         ;
 ; db/mux_sjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/mux_sjc.tdf             ;         ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimate of Logic utilization (ALMs needed) ; 0             ;
-;                                             ;               ;
-; Combinational ALUT usage for logic          ; 0             ;
-;     -- 7 input functions                    ; 0             ;
-;     -- 6 input functions                    ; 0             ;
-;     -- 5 input functions                    ; 0             ;
-;     -- 4 input functions                    ; 0             ;
-;     -- <=3 input functions                  ; 0             ;
-;                                             ;               ;
-; Dedicated logic registers                   ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 8             ;
-;                                             ;               ;
-; Total DSP Blocks                            ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; Disp01~output ;
-; Maximum fan-out                             ; 1             ;
-; Total fan-out                               ; 8             ;
-; Average fan-out                             ; 0.50          ;
-+---------------------------------------------+---------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 26        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 44        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 7         ;
+;     -- 5 input functions                    ; 7         ;
+;     -- 4 input functions                    ; 16        ;
+;     -- <=3 input functions                  ; 14        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 6         ;
+;                                             ;           ;
+; I/O pins                                    ; 30        ;
+; Total MLAB memory bits                      ; 0         ;
+; Total block memory bits                     ; 20        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 16        ;
+; Total fan-out                               ; 241       ;
+; Average fan-out                             ; 2.01      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |miniCPU                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 8    ; 0            ; |miniCPU            ; miniCPU     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                        ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |miniCPU                                        ; 44 (0)              ; 6 (0)                     ; 20                ; 0          ; 30   ; 0            ; |miniCPU                                                                                       ; miniCPU         ; work         ;
+;    |counter:inst3|                              ; 37 (25)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3                                                                         ; counter         ; work         ;
+;       |jmpr:inst0|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst0                                                              ; jmpr            ; work         ;
+;       |jmpr:inst1|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst1                                                              ; jmpr            ; work         ;
+;       |jmpr:inst2|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst2                                                              ; jmpr            ; work         ;
+;       |jmpr:inst3|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst3                                                              ; jmpr            ; work         ;
+;       |jmpr:inst4|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst4                                                              ; jmpr            ; work         ;
+;       |jmpr:inst5|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|counter:inst3|jmpr:inst5                                                              ; jmpr            ; work         ;
+;    |display:inst4|                              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |miniCPU|display:inst4                                                                         ; display         ; work         ;
+;    |rom:inst2|                                  ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2                                                                             ; rom             ; work         ;
+;       |lpm_rom:rom|                             ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom                                                                 ; lpm_rom         ; work         ;
+;          |altrom:srom|                          ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom                                                     ; altrom          ; work         ;
+;             |altsyncram:rom_block|              ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block                                ; altsyncram      ; work         ;
+;                |altsyncram_0a71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 20                ; 0          ; 0    ; 0            ; |miniCPU|rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated ; altsyncram_0a71 ; work         ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------+
+; Name                                                                                             ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                ;
++--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------+
+; rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 64           ; 16           ; --           ; --           ; 1024 ; microcpu_teste.mif ;
++--------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
@@ -316,39 +340,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------------------------------------+--------------------+
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; counter:inst3|inst6                   ; Lost fanout        ;
-; counter:inst3|inst11                  ; Lost fanout        ;
-; counter:inst3|inst12                  ; Lost fanout        ;
-; counter:inst3|inst13                  ; Lost fanout        ;
-; counter:inst3|inst14                  ; Lost fanout        ;
-; counter:inst3|inst15                  ; Lost fanout        ;
-; Total Number of Removed Registers = 6 ;                    ;
-+---------------------------------------+--------------------+
-
-
-+---------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                           ;
-+---------------------+--------------------+--------------------------------------------+
-; Register name       ; Reason for Removal ; Registers Removed due to This Register     ;
-+---------------------+--------------------+--------------------------------------------+
-; counter:inst3|inst6 ; Lost Fanouts       ; counter:inst3|inst11, counter:inst3|inst12 ;
-+---------------------+--------------------+--------------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -356,12 +356,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------+
-; Source assignments for rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated ;
+; Source assignments for rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                             ;
 +---------------------------------+--------------------+------+------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                              ;
 +---------------------------------+--------------------+------+------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom:inst2|LPM_ROM:rom ;
++------------------------+--------------------+----------------------+
+; Parameter Name         ; Value              ; Type                 ;
++------------------------+--------------------+----------------------+
+; LPM_WIDTH              ; 16                 ; Untyped              ;
+; LPM_WIDTHAD            ; 6                  ; Untyped              ;
+; LPM_NUMWORDS           ; 64                 ; Untyped              ;
+; LPM_ADDRESS_CONTROL    ; UNREGISTERED       ; Untyped              ;
+; LPM_OUTDATA            ; REGISTERED         ; Untyped              ;
+; LPM_FILE               ; microcpu_teste.mif ; Untyped              ;
+; DEVICE_FAMILY          ; Cyclone V          ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON                 ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF                ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON                 ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF                ; IGNORE_CASCADE       ;
++------------------------+--------------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -478,27 +498,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|bankmux:inst11|lpm_mux:LPM_MUX_component ;
-+------------------------+-----------+----------------------------------------------------------------+
-; Parameter Name         ; Value     ; Type                                                           ;
-+------------------------+-----------+----------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                                     ;
-; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                                   ;
-; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                                   ;
-; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                                 ;
-; LPM_WIDTH              ; 4         ; Signed Integer                                                 ;
-; LPM_SIZE               ; 4         ; Signed Integer                                                 ;
-; LPM_WIDTHS             ; 2         ; Signed Integer                                                 ;
-; LPM_PIPELINE           ; 0         ; Untyped                                                        ;
-; CBXI_PARAMETER         ; mux_vjc   ; Untyped                                                        ;
-; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
-+------------------------+-----------+----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+----------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                 ;
 +------------------------+-----------+----------------------------------------------------------------------+
@@ -517,7 +518,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst11|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst11|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                   ;
 +------------------------+-----------+------------------------------------------------------------------------+
@@ -536,7 +537,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst13|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst13|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                   ;
 +------------------------+-----------+------------------------------------------------------------------------+
@@ -555,7 +556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst12|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst12|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                   ;
 +------------------------+-----------+------------------------------------------------------------------------+
@@ -650,7 +651,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+----------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                 ;
 +------------------------+-----------+----------------------------------------------------------------------+
@@ -669,7 +670,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst11|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst11|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                   ;
 +------------------------+-----------+------------------------------------------------------------------------+
@@ -688,7 +689,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst13|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst13|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                   ;
 +------------------------+-----------+------------------------------------------------------------------------+
@@ -707,7 +708,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst4|mux2:inst12|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: regBank:inst1|reg4:inst6|mux2:inst12|lpm_mux:LPM_MUX_component ;
 +------------------------+-----------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value     ; Type                                                                   ;
 +------------------------+-----------+------------------------------------------------------------------------+
@@ -722,6 +723,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CBXI_PARAMETER         ; mux_pjc   ; Untyped                                                                ;
 ; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                                ;
 +------------------------+-----------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regBank:inst1|bankmux:inst11|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                                           ;
++------------------------+-----------+----------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                                 ;
+; LPM_WIDTH              ; 4         ; Signed Integer                                                 ;
+; LPM_SIZE               ; 4         ; Signed Integer                                                 ;
+; LPM_WIDTHS             ; 2         ; Signed Integer                                                 ;
+; LPM_PIPELINE           ; 0         ; Untyped                                                        ;
+; CBXI_PARAMETER         ; mux_vjc   ; Untyped                                                        ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
++------------------------+-----------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -741,26 +761,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CBXI_PARAMETER         ; mux_vjc   ; Untyped                                                        ;
 ; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
 +------------------------+-----------+----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: rom:inst2|LPM_ROM:rom ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 16           ; Untyped                    ;
-; LPM_WIDTHAD            ; 6            ; Untyped                    ;
-; LPM_NUMWORDS           ; 64           ; Untyped                    ;
-; LPM_ADDRESS_CONTROL    ; UNREGISTERED ; Untyped                    ;
-; LPM_OUTDATA            ; REGISTERED   ; Untyped                    ;
-; LPM_FILE               ; Mif.mif      ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone V    ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -807,13 +807,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
+; arriav_ff             ; 6                           ;
+;     CLR               ; 6                           ;
+; arriav_lcell_comb     ; 47                          ;
+;     normal            ; 47                          ;
 ;         0 data inputs ; 2                           ;
-; boundary_port         ; 8                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 7                           ;
+; boundary_port         ; 30                          ;
+; stratixv_ram_block    ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -832,7 +841,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 15 13:34:26 2026
+    Info: Processing started: Thu Oct 15 15:38:24 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off miniCPU -c miniCPU
 Warning (125092): Tcl Script File mux2.qip not found
     Info (125063): set_global_assignment -name QIP_FILE mux2.qip
@@ -884,10 +893,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file cpumux.
 Info (12021): Found 1 design units, including 1 entities, in source file res_mux.v
     Info (12023): Found entity 1: res_mux File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/res_mux.v Line: 40
 Info (12127): Elaborating entity "miniCPU" for the top level hierarchy
-Warning (275013): Port "CLK" of type rom and instance "inst2" is missing source signal
-Warning (275013): Port "CLK" of type counter and instance "inst3" is missing source signal
-Warning (275013): Port "CLK" of type regBank and instance "inst1" is missing source signal
 Info (12128): Elaborating entity "display" for hierarchy "display:inst4"
+Info (12128): Elaborating entity "counter" for hierarchy "counter:inst3"
+Info (12128): Elaborating entity "jmpr" for hierarchy "counter:inst3|jmpr:inst1"
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:inst5"
+Info (12128): Elaborating entity "rom" for hierarchy "rom:inst2"
+Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming microcpu_teste.mif was intended to be a quoted string
+Info (12128): Elaborating entity "LPM_ROM" for hierarchy "rom:inst2|LPM_ROM:rom"
+Info (12130): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom"
+Info (12133): Instantiated megafunction "rom:inst2|LPM_ROM:rom" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "UNREGISTERED"
+    Info (12134): Parameter "LPM_FILE" = "microcpu_teste.mif"
+    Info (12134): Parameter "LPM_NUMWORDS" = "64"
+    Info (12134): Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+    Info (12134): Parameter "LPM_WIDTHAD" = "6"
+Info (12128): Elaborating entity "altrom" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 61
+Warning (287001): Assertion warning: Can't convert ROM for Cyclone V device family using altsyncram megafunction -- implementing ROM using benchmarking mode by moving output registers to the input side. Power-up states and behavior may be different. File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 177
+Info (287000): Assertion information: Clocko port is used as clock for the address input port File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 253
+Info (12131): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom|altrom:srom", which is child of megafunction instantiation "rom:inst2|LPM_ROM:rom" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 61
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 103
+Info (12131): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "rom:inst2|LPM_ROM:rom" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 103
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0a71.tdf
+    Info (12023): Found entity 1: altsyncram_0a71 File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_0a71" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst"
 Info (12128): Elaborating entity "ula_mux" for hierarchy "ULA:inst|ula_mux:inst7"
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "ULA:inst|ula_mux:inst7|lpm_mux:LPM_MUX_component" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/ULA/ula_mux.v Line: 73
@@ -925,7 +954,6 @@ Warning (275043): Pin "RESB2" is missing source
 Warning (275043): Pin "RESB1" is missing source
 Warning (275043): Pin "RESB0" is missing source
 Info (12128): Elaborating entity "reg4" for hierarchy "regBank:inst1|reg4:inst"
-Warning (275009): Pin "Data" not connected
 Info (12128): Elaborating entity "mux2" for hierarchy "regBank:inst1|reg4:inst|mux2:inst"
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "regBank:inst1|reg4:inst|mux2:inst|lpm_mux:LPM_MUX_component" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/REGISTER/mux2.v Line: 70
 Info (12130): Elaborated megafunction instantiation "regBank:inst1|reg4:inst|mux2:inst|lpm_mux:LPM_MUX_component" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/REGISTER/mux2.v Line: 70
@@ -948,29 +976,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/deco
     Info (12023): Found entity 1: decode_r3f File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/decode_r3f.tdf Line: 23
 Info (12128): Elaborating entity "decode_r3f" for hierarchy "regBank:inst1|decoder:inst3|lpm_decode:LPM_DECODE_component|decode_r3f:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.tdf Line: 77
 Info (12128): Elaborating entity "bankmux" for hierarchy "regBank:inst1|bankmux:inst11"
-Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:inst5"
-Info (12128): Elaborating entity "rom" for hierarchy "rom:inst2"
-Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming Mif.mif was intended to be a quoted string
-Info (12128): Elaborating entity "LPM_ROM" for hierarchy "rom:inst2|LPM_ROM:rom"
-Info (12130): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom"
-Info (12133): Instantiated megafunction "rom:inst2|LPM_ROM:rom" with the following parameter:
-    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "UNREGISTERED"
-    Info (12134): Parameter "LPM_FILE" = "Mif.mif"
-    Info (12134): Parameter "LPM_NUMWORDS" = "64"
-    Info (12134): Parameter "LPM_OUTDATA" = "REGISTERED"
-    Info (12134): Parameter "LPM_WIDTH" = "16"
-    Info (12134): Parameter "LPM_WIDTHAD" = "6"
-Info (12128): Elaborating entity "altrom" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 61
-Warning (287001): Assertion warning: Can't convert ROM for Cyclone V device family using altsyncram megafunction -- implementing ROM using benchmarking mode by moving output registers to the input side. Power-up states and behavior may be different. File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 177
-Info (287000): Assertion information: Clocko port is used as clock for the address input port File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 253
-Info (12131): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom|altrom:srom", which is child of megafunction instantiation "rom:inst2|LPM_ROM:rom" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 61
-Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 103
-Info (12131): Elaborated megafunction instantiation "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "rom:inst2|LPM_ROM:rom" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.tdf Line: 103
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m461.tdf
-    Info (12023): Found entity 1: altsyncram_m461 File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_m461" for hierarchy "rom:inst2|LPM_ROM:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "counter" for hierarchy "counter:inst3"
-Info (12128): Elaborating entity "jmpr" for hierarchy "counter:inst3|jmpr:inst1"
 Info (12128): Elaborating entity "res_mux" for hierarchy "res_mux:inst8"
 Info (12128): Elaborating entity "cpumux" for hierarchy "cpumux:inst7"
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "cpumux:inst7|lpm_mux:LPM_MUX_component" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/cpumux.v Line: 69
@@ -985,44 +990,65 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
 Info (12128): Elaborating entity "mux_sjc" for hierarchy "cpumux:inst7|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[6]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 161
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[7]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 182
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[8]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 203
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[9]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 224
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[10]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 245
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[11]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 266
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[0]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 35
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[1]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 56
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[2]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 77
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[3]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 98
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[4]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 119
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[5]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 140
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[12]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 287
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[13]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 308
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[14]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 329
-        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_m461:auto_generated|q_a[15]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_m461.tdf Line: 350
+        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[6]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 161
+        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[7]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 182
+        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[8]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 203
+        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[9]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 224
+        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[10]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 245
+        Warning (14320): Synthesized away node "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|q_a[11]" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 266
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[15]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[14]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[13]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[12]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[5]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[4]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[3]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[2]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[1]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+    Warning (13049): Converted tri-state buffer "rom:inst2|lpm_rom:rom|otri[0]" feeding internal logic into a wire File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_rom.tdf Line: 68
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "counter:inst3|inst12" is converted into an equivalent circuit using register "counter:inst3|inst12~_emulated" and latch "counter:inst3|inst12~1"
+    Warning (13310): Register "counter:inst3|inst13" is converted into an equivalent circuit using register "counter:inst3|inst13~_emulated" and latch "counter:inst3|inst13~1"
+    Warning (13310): Register "counter:inst3|inst14" is converted into an equivalent circuit using register "counter:inst3|inst14~_emulated" and latch "counter:inst3|inst14~1"
+    Warning (13310): Register "counter:inst3|inst15" is converted into an equivalent circuit using register "counter:inst3|inst15~_emulated" and latch "counter:inst3|inst15~1"
+    Warning (13310): Register "counter:inst3|inst6" is converted into an equivalent circuit using register "counter:inst3|inst6~_emulated" and latch "counter:inst3|inst6~1"
+    Warning (13310): Register "counter:inst3|inst11" is converted into an equivalent circuit using register "counter:inst3|inst11~_emulated" and latch "counter:inst3|inst11~1"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Disp01" is stuck at GND
-    Warning (13410): Pin "Disp02" is stuck at GND
-    Warning (13410): Pin "Disp03" is stuck at GND
-    Warning (13410): Pin "Disp04" is stuck at GND
-    Warning (13410): Pin "Disp05" is stuck at GND
-    Warning (13410): Pin "Disp06" is stuck at GND
-    Warning (13410): Pin "Disp07" is stuck at VCC
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "Disp11" is stuck at GND
+    Warning (13410): Pin "Disp13" is stuck at VCC
+    Warning (13410): Pin "Disp14" is stuck at VCC
+    Warning (13410): Pin "Disp15" is stuck at GND
+    Warning (13410): Pin "Disp16" is stuck at GND
+    Warning (13410): Pin "Disp17" is stuck at GND
+    Warning (13410): Pin "Disp21" is stuck at GND
+    Warning (13410): Pin "Disp22" is stuck at VCC
+    Warning (13410): Pin "Disp23" is stuck at VCC
+    Warning (13410): Pin "Disp24" is stuck at VCC
+    Warning (13410): Pin "Disp25" is stuck at GND
+    Warning (13410): Pin "Disp26" is stuck at GND
+    Warning (13410): Pin "Disp27" is stuck at GND
+    Warning (13410): Pin "Disp31" is stuck at GND
+    Warning (13410): Pin "Disp32" is stuck at VCC
+    Warning (13410): Pin "Disp33" is stuck at VCC
+    Warning (13410): Pin "Disp34" is stuck at VCC
+    Warning (13410): Pin "Disp35" is stuck at GND
+    Warning (13410): Pin "Disp36" is stuck at GND
+    Warning (13410): Pin "Disp37" is stuck at GND
+    Warning (13410): Pin "Disp12" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (17036): Removed 5 MSB VCC or GND address nodes from RAM block "rom:inst2|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_0a71:auto_generated|ALTSYNCRAM" File: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/db/altsyncram_0a71.tdf Line: 32
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "BRST"
-Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 7 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Thu Oct 15 13:34:33 2026
-    Info: Elapsed time: 00:00:07
+Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 44 logic cells
+    Info (21064): Implemented 10 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info: Peak virtual memory: 4907 megabytes
+    Info: Processing ended: Thu Oct 15 15:38:30 2026
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:13
 
 
