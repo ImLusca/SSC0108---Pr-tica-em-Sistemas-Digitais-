@@ -1,5 +1,5 @@
 Assembler report for miniCPU
-Mon Oct 12 23:53:43 2026
+Thu Oct 15 02:12:08 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/12543930/Documents/GitHub/miniCPU/output_files/miniCPU.sof
+  5. Assembler Device Options: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/output_files/miniCPU.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Oct 12 23:53:43 2026 ;
+; Assembler Status      ; Successful - Thu Oct 15 02:12:08 2026 ;
 ; Revision Name         ; miniCPU                               ;
 ; Top-level Entity Name ; miniCPU                               ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ on the Quartus Prime software download page.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------+
-; Assembler Generated Files                                           ;
-+---------------------------------------------------------------------+
-; File Name                                                           ;
-+---------------------------------------------------------------------+
-; C:/Users/12543930/Documents/GitHub/miniCPU/output_files/miniCPU.sof ;
-+---------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; File Name                                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/output_files/miniCPU.sof ;
++-----------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/12543930/Documents/GitHub/miniCPU/output_files/miniCPU.sof ;
-+----------------+------------------------------------------------------------------------------+
-; Option         ; Setting                                                                      ;
-+----------------+------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x004DCFE7                                                                   ;
-; Checksum       ; 0x004DCFE7                                                                   ;
-+----------------+------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/output_files/miniCPU.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                      ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x004DD965                                                                                                   ;
+; Checksum       ; 0x004DD965                                                                                                   ;
++----------------+--------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,16 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Mon Oct 12 23:53:40 2026
+    Info: Processing started: Thu Oct 15 02:12:06 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off miniCPU -c miniCPU
+Warning (125092): Tcl Script File mux2.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE mux2.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
-Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4988 megabytes
-    Info: Processing ended: Mon Oct 12 23:53:43 2026
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Thu Oct 15 02:12:08 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

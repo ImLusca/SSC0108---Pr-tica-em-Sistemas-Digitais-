@@ -1,5 +1,5 @@
 Flow report for miniCPU
-Mon Oct 12 23:53:47 2026
+Thu Oct 15 02:12:13 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Mon Oct 12 23:53:47 2026           ;
+; Flow Status                     ; Successful - Thu Oct 15 02:12:13 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; miniCPU                                         ;
 ; Top-level Entity Name           ; miniCPU                                         ;
@@ -50,7 +50,7 @@ on the Quartus Prime software download page.
 ; Timing Models                   ; Final                                           ;
 ; Logic utilization (in ALMs)     ; 1 / 18,480 ( < 1 % )                            ;
 ; Total registers                 ; 0                                               ;
-; Total pins                      ; 1 / 224 ( < 1 % )                               ;
+; Total pins                      ; 17 / 224 ( 8 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                           ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                                  ;
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2026 23:53:17 ;
+; Start date & time ; 10/15/2026 02:11:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; miniCPU             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 202512545235283.179185999711612        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 16321417986387.179204110605276         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -89,9 +89,19 @@ on the Quartus Prime software download page.
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; REGISTER/mux2.bsf                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; REGISTER/mux2_bb.v                     ; --            ; --          ; --                                ;
+; MISC_FILE                           ; REGISTER/decoder.bsf                   ; --            ; --          ; --                                ;
+; MISC_FILE                           ; REGISTER/decoder_bb.v                  ; --            ; --          ; --                                ;
+; MISC_FILE                           ; REGISTER/bankmux.bsf                   ; --            ; --          ; --                                ;
+; MISC_FILE                           ; REGISTER/bankmux_bb.v                  ; --            ; --          ; --                                ;
+; MISC_FILE                           ; ULA/ula_mux.bsf                        ; --            ; --          ; --                                ;
+; MISC_FILE                           ; ULA/ula_mux_bb.v                       ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
@@ -101,12 +111,12 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4812 MB             ; 00:00:11                           ;
-; Fitter               ; 00:00:16     ; 1.0                     ; 6619 MB             ; 00:00:59                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4987 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 5111 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4739 MB             ; 00:00:00                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:01:14                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4834 MB             ; 00:00:13                           ;
+; Fitter               ; 00:00:13     ; 1.0                     ; 6650 MB             ; 00:00:52                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4987 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5286 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:01:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,11 +125,11 @@ on the Quartus Prime software download page.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; 6-305-23         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; 6-305-23         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; 6-305-23         ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; 6-305-23         ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; 6-305-23         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; 6-305-22         ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; 6-305-22         ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; 6-305-22         ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; 6-305-22         ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; 6-305-22         ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

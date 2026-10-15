@@ -255,49 +255,6 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 944 40 1056 136)
-	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
-	(text "inst2" (rect 8 80 30 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Op" (rect 0 0 17 14)(font "Intel Clear" (font_size 8)))
-		(text "Op" (rect 21 27 38 41)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Jmp" (rect 0 0 27 14)(font "Intel Clear" (font_size 8)))
-		(text "Jmp" (rect 21 43 48 57)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "Clr" (rect 0 0 16 14)(font "Intel Clear" (font_size 8)))
-		(text "Clr" (rect 21 59 37 73)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 112 32)
-		(output)
-		(text "Set" (rect 0 0 20 14)(font "Intel Clear" (font_size 8)))
-		(text "Set" (rect 71 27 91 41)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 32)(pt 96 32))
-	)
-	(port
-		(pt 112 48)
-		(output)
-		(text "Clear" (rect 0 0 30 14)(font "Intel Clear" (font_size 8)))
-		(text "Clear" (rect 61 43 91 57)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 48)(pt 96 48))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 80))
-	)
-)
-(symbol
 	(rect 944 152 1056 248)
 	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
 	(text "inst4" (rect 8 80 30 92)(font "Intel Clear" ))
@@ -826,6 +783,49 @@ on the Quartus Prime software download page.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
+(symbol
+	(rect 944 40 1056 136)
+	(text "jmpr" (rect 5 0 33 14)(font "Intel Clear" (font_size 8)))
+	(text "inst0" (rect 8 80 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Op" (rect 0 0 17 14)(font "Intel Clear" (font_size 8)))
+		(text "Op" (rect 21 27 38 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Jmp" (rect 0 0 27 14)(font "Intel Clear" (font_size 8)))
+		(text "Jmp" (rect 21 43 48 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Clr" (rect 0 0 16 14)(font "Intel Clear" (font_size 8)))
+		(text "Clr" (rect 21 59 37 73)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "Set" (rect 0 0 20 14)(font "Intel Clear" (font_size 8)))
+		(text "Set" (rect 71 27 91 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 112 32)(pt 96 32))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "Clear" (rect 0 0 30 14)(font "Intel Clear" (font_size 8)))
+		(text "Clear" (rect 61 43 91 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 112 48)(pt 96 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 80))
+	)
+)
 (connector
 	(pt 304 480)
 	(pt 304 464)
@@ -937,11 +937,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "CLR" (rect 538 120 558 132)(font "Intel Clear" ))
-	(pt 544 136)
-	(pt 528 136)
-)
-(connector
 	(text "ST1" (rect 488 431 500 448)(font "Intel Clear" )(vertical))
 	(pt 504 456)
 	(pt 504 440)
@@ -962,7 +957,7 @@ on the Quartus Prime software download page.
 	(pt 448 496)
 )
 (connector
-	(text "ST2" (rect 615 430 627 447)(font "Intel Clear" )(vertical))
+	(text "ST2" (rect 614 429 626 446)(font "Intel Clear" )(vertical))
 	(pt 632 456)
 	(pt 632 440)
 )
@@ -1097,11 +1092,6 @@ on the Quartus Prime software download page.
 	(pt 944 88)
 )
 (connector
-	(text "CLR" (rect 930 88 950 100)(font "Intel Clear" ))
-	(pt 920 104)
-	(pt 944 104)
-)
-(connector
 	(text "Addr[4]" (rect 904 168 939 180)(font "Intel Clear" ))
 	(pt 920 184)
 	(pt 944 184)
@@ -1110,11 +1100,6 @@ on the Quartus Prime software download page.
 	(text "JMP" (rect 930 184 952 196)(font "Intel Clear" ))
 	(pt 920 200)
 	(pt 944 200)
-)
-(connector
-	(text "CLR" (rect 930 200 950 212)(font "Intel Clear" ))
-	(pt 920 216)
-	(pt 944 216)
 )
 (connector
 	(text "CL0" (rect 794 80 812 92)(font "Intel Clear" ))
@@ -1157,11 +1142,6 @@ on the Quartus Prime software download page.
 	(pt 672 96)
 )
 (connector
-	(text "CLR" (rect 658 96 678 108)(font "Intel Clear" ))
-	(pt 648 112)
-	(pt 672 112)
-)
-(connector
 	(text "Addr[1]" (rect 632 176 667 188)(font "Intel Clear" ))
 	(pt 648 192)
 	(pt 672 192)
@@ -1170,11 +1150,6 @@ on the Quartus Prime software download page.
 	(text "JMP" (rect 658 192 680 204)(font "Intel Clear" ))
 	(pt 648 208)
 	(pt 672 208)
-)
-(connector
-	(text "CLR" (rect 658 208 678 220)(font "Intel Clear" ))
-	(pt 648 224)
-	(pt 672 224)
 )
 (connector
 	(text "Addr[2]" (rect 632 280 667 292)(font "Intel Clear" ))
@@ -1187,11 +1162,6 @@ on the Quartus Prime software download page.
 	(pt 672 312)
 )
 (connector
-	(text "CLR" (rect 658 312 678 324)(font "Intel Clear" ))
-	(pt 648 328)
-	(pt 672 328)
-)
-(connector
 	(text "Addr[5]" (rect 904 272 939 284)(font "Intel Clear" ))
 	(pt 920 288)
 	(pt 944 288)
@@ -1202,11 +1172,6 @@ on the Quartus Prime software download page.
 	(pt 944 304)
 )
 (connector
-	(text "CLR" (rect 930 304 950 316)(font "Intel Clear" ))
-	(pt 920 320)
-	(pt 944 320)
-)
-(connector
 	(text "ST5" (rect 1066 272 1083 284)(font "Intel Clear" ))
 	(pt 1056 288)
 	(pt 1088 288)
@@ -1215,4 +1180,39 @@ on the Quartus Prime software download page.
 	(text "CL5" (rect 1066 288 1084 300)(font "Intel Clear" ))
 	(pt 1056 304)
 	(pt 1088 304)
+)
+(connector
+	(text "NCLR" (rect 538 120 565 132)(font "Intel Clear" ))
+	(pt 544 136)
+	(pt 528 136)
+)
+(connector
+	(text "NCLR" (rect 658 96 685 108)(font "Intel Clear" ))
+	(pt 648 112)
+	(pt 672 112)
+)
+(connector
+	(text "NCLR" (rect 658 208 685 220)(font "Intel Clear" ))
+	(pt 648 224)
+	(pt 672 224)
+)
+(connector
+	(text "NCLR" (rect 658 312 685 324)(font "Intel Clear" ))
+	(pt 648 328)
+	(pt 672 328)
+)
+(connector
+	(text "NCLR" (rect 930 88 957 100)(font "Intel Clear" ))
+	(pt 920 104)
+	(pt 944 104)
+)
+(connector
+	(text "NCLR" (rect 930 200 957 212)(font "Intel Clear" ))
+	(pt 920 216)
+	(pt 944 216)
+)
+(connector
+	(text "NCLR" (rect 930 304 957 316)(font "Intel Clear" ))
+	(pt 920 320)
+	(pt 944 320)
 )

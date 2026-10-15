@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "10/12/2026 23:53:47"
+// DATE "10/15/2026 02:12:13"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -30,11 +30,59 @@
 `timescale 1 ps/ 1 ps
 
 module miniCPU (
-	pin_name1);
-input 	pin_name1;
+	Disp01,
+	Disp02,
+	Disp03,
+	Disp04,
+	Disp05,
+	Disp06,
+	Disp07,
+	SW8,
+	SW9,
+	SW0,
+	SW1,
+	SW2,
+	SW3,
+	SW4,
+	SW5,
+	SW7,
+	SW6);
+output 	Disp01;
+output 	Disp02;
+output 	Disp03;
+output 	Disp04;
+output 	Disp05;
+output 	Disp06;
+output 	Disp07;
+input 	SW8;
+input 	SW9;
+input 	SW0;
+input 	SW1;
+input 	SW2;
+input 	SW3;
+input 	SW4;
+input 	SW5;
+input 	SW7;
+input 	SW6;
 
 // Design Ports Information
-// pin_name1	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp01	=>  Location: PIN_U21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp02	=>  Location: PIN_V21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp03	=>  Location: PIN_W22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp04	=>  Location: PIN_W21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp05	=>  Location: PIN_Y22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp06	=>  Location: PIN_Y21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Disp07	=>  Location: PIN_AA22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW8	=>  Location: PIN_AB13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW9	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW0	=>  Location: PIN_U13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW1	=>  Location: PIN_V13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW2	=>  Location: PIN_T13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW3	=>  Location: PIN_T12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW4	=>  Location: PIN_AA15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW5	=>  Location: PIN_AB15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW7	=>  Location: PIN_AA13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW6	=>  Location: PIN_AA14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -48,22 +96,242 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \pin_name1~input_o ;
+wire \SW8~input_o ;
+wire \SW9~input_o ;
+wire \SW0~input_o ;
+wire \SW1~input_o ;
+wire \SW2~input_o ;
+wire \SW3~input_o ;
+wire \SW4~input_o ;
+wire \SW5~input_o ;
+wire \SW7~input_o ;
+wire \SW6~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
-// Location: IOIBUF_X38_Y45_N1
-cyclonev_io_ibuf \pin_name1~input (
-	.i(pin_name1),
-	.ibar(gnd),
+// Location: IOOBUF_X52_Y0_N53
+cyclonev_io_obuf \Disp01~output (
+	.i(gnd),
+	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
-	.o(\pin_name1~input_o ));
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp01),
+	.obar());
 // synopsys translate_off
-defparam \pin_name1~input .bus_hold = "false";
-defparam \pin_name1~input .simulate_z_as = "z";
+defparam \Disp01~output .bus_hold = "false";
+defparam \Disp01~output .open_drain_output = "false";
+defparam \Disp01~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: LABCELL_X32_Y32_N3
+// Location: IOOBUF_X51_Y0_N36
+cyclonev_io_obuf \Disp02~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp02),
+	.obar());
+// synopsys translate_off
+defparam \Disp02~output .bus_hold = "false";
+defparam \Disp02~output .open_drain_output = "false";
+defparam \Disp02~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X48_Y0_N76
+cyclonev_io_obuf \Disp03~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp03),
+	.obar());
+// synopsys translate_off
+defparam \Disp03~output .bus_hold = "false";
+defparam \Disp03~output .open_drain_output = "false";
+defparam \Disp03~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X50_Y0_N36
+cyclonev_io_obuf \Disp04~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp04),
+	.obar());
+// synopsys translate_off
+defparam \Disp04~output .bus_hold = "false";
+defparam \Disp04~output .open_drain_output = "false";
+defparam \Disp04~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X48_Y0_N93
+cyclonev_io_obuf \Disp05~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp05),
+	.obar());
+// synopsys translate_off
+defparam \Disp05~output .bus_hold = "false";
+defparam \Disp05~output .open_drain_output = "false";
+defparam \Disp05~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X50_Y0_N53
+cyclonev_io_obuf \Disp06~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp06),
+	.obar());
+// synopsys translate_off
+defparam \Disp06~output .bus_hold = "false";
+defparam \Disp06~output .open_drain_output = "false";
+defparam \Disp06~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X46_Y0_N36
+cyclonev_io_obuf \Disp07~output (
+	.i(vcc),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Disp07),
+	.obar());
+// synopsys translate_off
+defparam \Disp07~output .bus_hold = "false";
+defparam \Disp07~output .open_drain_output = "false";
+defparam \Disp07~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N92
+cyclonev_io_ibuf \SW8~input (
+	.i(SW8),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW8~input_o ));
+// synopsys translate_off
+defparam \SW8~input .bus_hold = "false";
+defparam \SW8~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N75
+cyclonev_io_ibuf \SW9~input (
+	.i(SW9),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW9~input_o ));
+// synopsys translate_off
+defparam \SW9~input .bus_hold = "false";
+defparam \SW9~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N41
+cyclonev_io_ibuf \SW0~input (
+	.i(SW0),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW0~input_o ));
+// synopsys translate_off
+defparam \SW0~input .bus_hold = "false";
+defparam \SW0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N58
+cyclonev_io_ibuf \SW1~input (
+	.i(SW1),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW1~input_o ));
+// synopsys translate_off
+defparam \SW1~input .bus_hold = "false";
+defparam \SW1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y0_N1
+cyclonev_io_ibuf \SW2~input (
+	.i(SW2),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW2~input_o ));
+// synopsys translate_off
+defparam \SW2~input .bus_hold = "false";
+defparam \SW2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y0_N18
+cyclonev_io_ibuf \SW3~input (
+	.i(SW3),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW3~input_o ));
+// synopsys translate_off
+defparam \SW3~input .bus_hold = "false";
+defparam \SW3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X36_Y0_N35
+cyclonev_io_ibuf \SW4~input (
+	.i(SW4),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW4~input_o ));
+// synopsys translate_off
+defparam \SW4~input .bus_hold = "false";
+defparam \SW4~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X36_Y0_N52
+cyclonev_io_ibuf \SW5~input (
+	.i(SW5),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW5~input_o ));
+// synopsys translate_off
+defparam \SW5~input .bus_hold = "false";
+defparam \SW5~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y0_N35
+cyclonev_io_ibuf \SW7~input (
+	.i(SW7),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW7~input_o ));
+// synopsys translate_off
+defparam \SW7~input .bus_hold = "false";
+defparam \SW7~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y0_N52
+cyclonev_io_ibuf \SW6~input (
+	.i(SW6),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW6~input_o ));
+// synopsys translate_off
+defparam \SW6~input .bus_hold = "false";
+defparam \SW6~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X49_Y20_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

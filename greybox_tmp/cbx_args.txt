@@ -1,9 +1,11 @@
-LPM_DECODES=4
-LPM_TYPE=LPM_DECODE
-LPM_WIDTH=2
+LPM_SIZE=4
+LPM_TYPE=LPM_MUX
+LPM_WIDTH=4
+LPM_WIDTHS=2
 DEVICE_FAMILY="Cyclone V"
 data
-eq
-eq
-eq
-eq
+data
+data
+data
+sel
+result
