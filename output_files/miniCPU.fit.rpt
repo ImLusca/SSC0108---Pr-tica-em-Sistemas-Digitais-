@@ -1,5 +1,5 @@
 Fitter report for miniCPU
-Thu Oct 15 02:12:05 2026
+Thu Oct 15 13:34:50 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -10,28 +10,29 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. Incremental Compilation Preservation Summary
-  6. Incremental Compilation Partition Settings
-  7. Incremental Compilation Placement Preservation
-  8. Pin-Out File
-  9. Fitter Resource Usage Summary
- 10. Fitter Partition Statistics
- 11. Input Pins
- 12. Output Pins
- 13. I/O Bank Usage
- 14. All Package Pins
- 15. I/O Assignment Warnings
- 16. Fitter Resource Utilization by Entity
- 17. Delay Chain Summary
- 18. Pad To Core Delay Chain Fanout
- 19. Routing Usage Summary
- 20. I/O Rules Summary
- 21. I/O Rules Details
- 22. I/O Rules Matrix
- 23. Fitter Device Options
- 24. Operating Settings and Conditions
- 25. Fitter Messages
- 26. Fitter Suppressed Messages
+  5. Ignored Assignments
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. I/O Bank Usage
+ 15. All Package Pins
+ 16. I/O Assignment Warnings
+ 17. Fitter Resource Utilization by Entity
+ 18. Delay Chain Summary
+ 19. Pad To Core Delay Chain Fanout
+ 20. Routing Usage Summary
+ 21. I/O Rules Summary
+ 22. I/O Rules Details
+ 23. I/O Rules Matrix
+ 24. Fitter Device Options
+ 25. Operating Settings and Conditions
+ 26. Fitter Messages
+ 27. Fitter Suppressed Messages
 
 
 
@@ -58,7 +59,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 15 02:12:05 2026           ;
+; Fitter Status                   ; Successful - Thu Oct 15 13:34:50 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; miniCPU                                         ;
 ; Top-level Entity Name           ; miniCPU                                         ;
@@ -67,7 +68,7 @@ on the Quartus Prime software download page.
 ; Timing Models                   ; Final                                           ;
 ; Logic utilization (in ALMs)     ; 1 / 18,480 ( < 1 % )                            ;
 ; Total registers                 ; 0                                               ;
-; Total pins                      ; 17 / 224 ( 8 % )                                ;
+; Total pins                      ; 8 / 224 ( 4 % )                                 ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                           ;
 ; Total RAM Blocks                ; 0 / 308 ( 0 % )                                 ;
@@ -148,7 +149,7 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -157,14 +158,32 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                    ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Location ;                ;              ; SW0        ; PIN_U13       ; QSF Assignment ;
+; Location ;                ;              ; SW1        ; PIN_V13       ; QSF Assignment ;
+; Location ;                ;              ; SW2        ; PIN_T13       ; QSF Assignment ;
+; Location ;                ;              ; SW3        ; PIN_T12       ; QSF Assignment ;
+; Location ;                ;              ; SW4        ; PIN_AA15      ; QSF Assignment ;
+; Location ;                ;              ; SW5        ; PIN_AB15      ; QSF Assignment ;
+; Location ;                ;              ; SW6        ; PIN_AA14      ; QSF Assignment ;
+; Location ;                ;              ; SW7        ; PIN_AA13      ; QSF Assignment ;
+; Location ;                ;              ; SW8        ; PIN_AB13      ; QSF Assignment ;
+; Location ;                ;              ; SW9        ; PIN_AB12      ; QSF Assignment ;
++----------+----------------+--------------+------------+---------------+----------------+
+
+
 +-------------------------------------------------------------------------------------------------+
 ; Incremental Compilation Preservation Summary                                                    ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 35 ) ; 0.00 % ( 0 / 35 )          ; 0.00 % ( 0 / 35 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 35 ) ; 0.00 % ( 0 / 35 )          ; 0.00 % ( 0 / 35 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 17 ) ; 0.00 % ( 0 / 17 )          ; 0.00 % ( 0 / 17 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 17 ) ; 0.00 % ( 0 / 17 )          ; 0.00 % ( 0 / 17 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -187,7 +206,7 @@ on the Quartus Prime software download page.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 35 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 17 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -240,7 +259,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 17 / 224           ; 8 %   ;
+; I/O pins                                                    ; 8 / 224            ; 4 %   ;
 ;     -- Clock pins                                           ; 0 / 9              ; 0 %   ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
@@ -267,8 +286,8 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; Peak interconnect usage (total/H/V)                         ; 0.0% / 0.0% / 0.0% ;       ;
 ; Maximum fan-out                                             ; 1                  ;       ;
 ; Highest non-global fan-out                                  ; 1                  ;       ;
-; Total fan-out                                               ; 17                 ;       ;
-; Average fan-out                                             ; 0.49               ;       ;
+; Total fan-out                                               ; 8                  ;       ;
+; Average fan-out                                             ; 0.47               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -318,7 +337,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;                                                             ;                     ;                                ;
 ;                                                             ;                     ;                                ;
 ; Virtual pins                                                ; 0                   ; 0                              ;
-; I/O pins                                                    ; 17                  ; 0                              ;
+; I/O pins                                                    ; 8                   ; 0                              ;
 ; I/O registers                                               ; 0                   ; 0                              ;
 ; Total block memory bits                                     ; 0                   ; 0                              ;
 ; Total block memory implementation bits                      ; 0                   ; 0                              ;
@@ -330,7 +349,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
-;     -- Total Connections                                    ; 17                  ; 0                              ;
+;     -- Total Connections                                    ; 8                   ; 0                              ;
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -338,7 +357,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ;     -- hard_block:auto_generated_inst                       ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Partition Interface                                         ;                     ;                                ;
-;     -- Input Ports                                          ; 10                  ; 0                              ;
+;     -- Input Ports                                          ; 1                   ; 0                              ;
 ;     -- Output Ports                                         ; 7                   ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
@@ -363,16 +382,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; SW0  ; U13   ; 4A       ; 33           ; 0            ; 40           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW1  ; V13   ; 4A       ; 33           ; 0            ; 57           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW2  ; T13   ; 4A       ; 34           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW3  ; T12   ; 4A       ; 34           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW4  ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW5  ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW6  ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW7  ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW8  ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW9  ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; BRST ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -391,20 +401,20 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+----------------------------------------------------------------------------+
-; I/O Bank Usage                                                             ;
-+----------+------------------+---------------+--------------+---------------+
-; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+------------------+---------------+--------------+---------------+
-; 2A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 17 / 48 ( 35 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-+----------+------------------+---------------+--------------+---------------+
++---------------------------------------------------------------------------+
+; I/O Bank Usage                                                            ;
++----------+-----------------+---------------+--------------+---------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+-----------------+---------------+--------------+---------------+
+; 2A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 8 / 48 ( 17 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
++----------+-----------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -446,9 +456,9 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; AA10     ; 87         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 105        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA13     ; 113        ; 4A       ; SW7                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AA14     ; 111        ; 4A       ; SW6                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AA15     ; 116        ; 4A       ; SW4                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA13     ; 113        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA14     ; 111        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA15     ; 116        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AA17     ; 127        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA18     ; 129        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -467,10 +477,10 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; AB9      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB10     ; 98         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB11     ; 100        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AB12     ; 108        ; 4A       ; SW9                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AB13     ; 106        ; 4A       ; SW8                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB12     ; 108        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB13     ; 106        ; 4A       ; BRST                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB14     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB15     ; 114        ; 4A       ; SW5                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB15     ; 114        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB17     ; 119        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB18     ; 121        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -797,8 +807,8 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; T9       ; 83         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T10      ; 91         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; T12      ; 110        ; 4A       ; SW3                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; T13      ; 112        ; 4A       ; SW2                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; T12      ; 110        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; T13      ; 112        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T14      ; 126        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T15      ; 159        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -820,7 +830,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; U10      ; 85         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U11      ; 94         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U12      ; 96         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U13      ; 109        ; 4A       ; SW0                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U13      ; 109        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U14      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U15      ; 128        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U16      ; 150        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -842,7 +852,7 @@ The pin-out file can be found in C:/Users/12543930/Documents/GitHub/SSC0108---Pr
 ; V10      ; 77         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V11      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V13      ; 107        ; 4A       ; SW1                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V13      ; 107        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V14      ; 118        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V15      ; 120        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V16      ; 134        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -912,16 +922,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Disp05   ; Incomplete set of assignments ;
 ; Disp06   ; Incomplete set of assignments ;
 ; Disp07   ; Incomplete set of assignments ;
-; SW8      ; Incomplete set of assignments ;
-; SW9      ; Incomplete set of assignments ;
-; SW0      ; Incomplete set of assignments ;
-; SW1      ; Incomplete set of assignments ;
-; SW2      ; Incomplete set of assignments ;
-; SW3      ; Incomplete set of assignments ;
-; SW4      ; Incomplete set of assignments ;
-; SW5      ; Incomplete set of assignments ;
-; SW7      ; Incomplete set of assignments ;
-; SW6      ; Incomplete set of assignments ;
+; BRST     ; Incomplete set of assignments ;
+; BRST     ; Missing location assignment   ;
 +----------+-------------------------------+
 
 
@@ -930,7 +932,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
-; |miniCPU                   ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 17   ; 0            ; |miniCPU            ; miniCPU     ; work         ;
+; |miniCPU                   ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 8    ; 0            ; |miniCPU            ; miniCPU     ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -947,16 +949,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Disp05 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; Disp06 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; Disp07 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; SW8    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW9    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW0    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW1    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW2    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW3    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW4    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW5    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW7    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW6    ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; BRST   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +--------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -965,16 +958,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; SW8                 ;                   ;         ;
-; SW9                 ;                   ;         ;
-; SW0                 ;                   ;         ;
-; SW1                 ;                   ;         ;
-; SW2                 ;                   ;         ;
-; SW3                 ;                   ;         ;
-; SW4                 ;                   ;         ;
-; SW5                 ;                   ;         ;
-; SW7                 ;                   ;         ;
-; SW6                 ;                   ;         ;
+; BRST                ;                   ;         ;
 +---------------------+-------------------+---------+
 
 
@@ -1053,33 +1037,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-+--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
-+--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 17        ; 0            ; 17        ; 0            ; 0            ; 17        ; 17        ; 0            ; 17        ; 17        ; 0            ; 7            ; 0            ; 0            ; 0            ; 0            ; 7            ; 0            ; 0            ; 0            ; 0            ; 7            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 17           ; 0         ; 17           ; 17           ; 0         ; 0         ; 17           ; 0         ; 0         ; 17           ; 10           ; 17           ; 17           ; 17           ; 17           ; 10           ; 17           ; 17           ; 17           ; 17           ; 10           ; 17           ; 17           ; 17           ; 17           ; 17           ; 17           ;
-; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Disp01             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; Disp02             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; Disp03             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; Disp04             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; Disp05             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; Disp06             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; Disp07             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW8                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW9                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW0                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW1                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW2                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW3                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW4                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW5                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW7                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW6                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-+--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Total Pass         ; 7            ; 0            ; 7            ; 0            ; 0            ; 8         ; 7            ; 0            ; 8         ; 8         ; 0            ; 7            ; 0            ; 0            ; 0            ; 0            ; 7            ; 0            ; 0            ; 0            ; 0            ; 7            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Inapplicable ; 1            ; 8            ; 1            ; 8            ; 8            ; 0         ; 1            ; 8            ; 0         ; 0         ; 8            ; 1            ; 8            ; 8            ; 8            ; 8            ; 1            ; 8            ; 8            ; 8            ; 8            ; 1            ; 8            ; 8            ; 8            ; 8            ; 8            ; 8            ;
+; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Disp01             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Disp02             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Disp03             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Disp04             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Disp05             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Disp06             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; Disp07             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BRST               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -1136,11 +1111,23 @@ Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Critical Warning (169085): No exact pin location assignment(s) for 1 pins of 8 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "SW0" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW1" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW2" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW3" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW4" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW5" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW6" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW7" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW8" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW9" is assigned to location or region, but does not exist in design
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:02
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'miniCPU.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -1151,7 +1138,7 @@ Info (332154): The derive_clock_uncertainty command did not apply clock uncertai
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
@@ -1162,18 +1149,19 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/output_files/miniCPU.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6650 megabytes
-    Info: Processing ended: Thu Oct 15 02:12:05 2026
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:53
+Info: Quartus Prime Fitter was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 6618 megabytes
+    Info: Processing ended: Thu Oct 15 13:34:51 2026
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:01:01
 
 
 +----------------------------+

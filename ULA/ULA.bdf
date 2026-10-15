@@ -203,7 +203,7 @@ on the Quartus Prime software download page.
 (symbol
 	(rect 512 408 656 520)
 	(text "ula_mux" (rect 49 0 106 15)(font "Arial" (font_size 10)))
-	(text "inst7" (rect 8 98 30 110)(font "Intel Clear" ))
+	(text "inst7" (rect 8 98 31 108)(font "Arial" ))
 	(port
 		(pt 0 40)
 		(input)
