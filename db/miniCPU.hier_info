@@ -4,7 +4,6 @@ CLK => rom:inst2.CLK
 CLK => counter:inst3.CLK
 CLK => regBank:inst1.CLK
 CLK => LD5.DATAIN
-BRST => inst6.IN0
 Disp02 <= display:inst4.b
 Disp03 <= display:inst4.c
 Disp04 <= display:inst4.d
@@ -38,6 +37,7 @@ LD2 <= ALUS[1].DB_MAX_OUTPUT_PORT_TYPE
 LD3 <= JMP.DB_MAX_OUTPUT_PORT_TYPE
 LD4 <= RST.DB_MAX_OUTPUT_PORT_TYPE
 LD5 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+BRST => ~NO_FANOUT~
 
 
 |miniCPU|display:inst4
