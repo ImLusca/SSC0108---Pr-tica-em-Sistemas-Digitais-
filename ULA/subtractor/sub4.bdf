@@ -69,23 +69,6 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 840 632 872 664)
-	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
-	(text "inst4" (rect 3 21 25 33)(font "Intel Clear" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 23 11)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 23 11)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
 	(rect 656 224 688 256)
 	(text "GND" (rect 3 7 24 16)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 1 -1 29 11)(font "Intel Clear" )(invisible))
@@ -346,14 +329,6 @@ on the Quartus Prime software download page.
 (connector
 	(pt 816 608)
 	(pt 856 608)
-)
-(connector
-	(pt 816 624)
-	(pt 856 624)
-)
-(connector
-	(pt 856 624)
-	(pt 856 632)
 )
 (connector
 	(pt 840 384)

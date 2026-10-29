@@ -1,13 +1,14 @@
-﻿# Projeto miniCPU
+# Projeto miniCPU
 
-**Autor:** Lucas Pereira Pacheco — 12543930
-**Ambiente:** Quartus Prime Lite 24.1std.0; FPGA Cyclone V 5CEBA4F23C7.
+**Autores:**
+Lucas Pereira Pacheco — 12543930
+Philippe Sardenberg Castro Couto - 16897421
 
 ## 1. Objetivo
 
 O projeto consiste na construção de uma CPU didática capaz de buscar instruções em uma memória ROM, decodificá-las e realizar operações sobre um banco de registradores. Conforme o enunciado, as palavras de instrução devem ter pelo menos 16 bits, enquanto os registradores e a unidade lógica e aritmética devem possuir pelo menos 4 bits. O conteúdo dos registradores deve ser apresentado em displays após a execução das instruções.
 
-A arquitetura desenvolvida utiliza quatro registradores de 4 bits, uma ULA de 4 bits, um contador de programa de 6 bits e uma ROM de 64 palavras de 16 bits. O conjunto decodificado inclui soma, subtração, multiplicação, divisão, movimentação de dados, salto incondicional e reinicialização. Este relatório descreve a implementação e distingue o comportamento pretendido das limitações identificadas nos arquivos disponíveis.
+A arquitetura desenvolvida utiliza quatro registradores de 4 bits, uma ULA de 4 bits, um contador de programa de 6 bits e uma ROM de 64 palavras de 16 bits. O conjunto decodificado inclui soma, subtração, multiplicação, divisão, movimentação de dados, salto incondicional e reinicialização. Este relatório descreve a implementação corrigida e os resultados de compilação e simulação. As oito capturas preservadas são da versão inicial; os trechos seguintes identificam as alterações posteriores.
 
 ## 2. Arquitetura geral
 
@@ -27,15 +28,15 @@ A saída `DispOUT[15..0]` reúne os quatro registradores: R0 ocupa os bits 3 a 0
 
 *Figura 2 — Contador construído com seis flip-flops T e lógica de habilitação.*
 
-O módulo `COUNTER/counter.bdf` contém seis flip-flops T sincronizados pelo clock. O bit menos significativo alterna a cada pulso; os seguintes alternam quando todos os bits inferiores estão em nível alto. As portas AND implementam essas condições. No avanço sequencial, o contador percorre os endereços de 0 a 63, retornando a zero após o último endereço.
+A Figura 2 mostra a versão inicial, com seis flip-flops T. Na versão corrigida de `COUNTER/counter.bdf`, o contador usa seis flip-flops D e lógica combinacional para incremento, seleção do endereço de salto e reset síncrono. A lógica de incremento equivale ao contador binário: o bit menos significativo alterna a cada pulso e os seguintes dependem dos bits inferiores. O multiplexador de cada bit escolhe entre o incremento e JumpAddr. O reset síncrono, ativo em nível alto, tem prioridade sobre salto e incremento. No avanço sequencial, o contador percorre os endereços de 0 a 63, retornando a zero após o último endereço.
 
-Cada bit também recebe sinais de preset e clear gerados por uma instância de `jmpr`. Isso permite carregar um endereço de salto nos seis bits do contador.
+Na versão inicial, cada bit recebia sinais de preset e clear de uma instância de `jmpr`. Esse caminho foi substituído pelo carregamento síncrono do endereço, evitando saltos por entradas assíncronas. O arquivo jmpr foi preservado como parte do desenvolvimento, mas não é instanciado no contador corrigido.
 
 ![Lógica de preset e clear do salto](images/report/1793301624611.png)
 
 *Figura 3 — Circuito jmpr para um bit do endereço.*
 
-Na figura, `Op` é o bit do endereço e `Jmp` habilita o salto. As saídas dirigem as entradas assíncronas, ativas em nível baixo, dos flip-flops. As equações implementadas são:
+No circuito original da Figura 3, `Op` é o bit do endereço e `Jmp` habilita o salto. As saídas dirigem as entradas assíncronas, ativas em nível baixo, dos flip-flops. As equações implementadas são:
 
 - `Set = NOT(Op AND Jmp)`;
 - `Clear = (Op OR NOT Jmp) AND Clr`.
@@ -56,7 +57,7 @@ Dois multiplexadores independentes selecionam as saídas RESA e RESB a partir de
 
 *Figura 5 — Estrutura interna de reg4.*
 
-Cada registrador usa quatro flip-flops D. Um multiplexador por bit escolhe entre o dado externo e a própria saída do flip-flop. Com `LOAD = 1`, a entrada é carregada na borda de subida do clock; com `LOAD = 0`, a realimentação mantém o valor. As entradas de clear são compartilhadas pelos quatro bits e são ativas em nível baixo nos flip-flops mostrados.
+Cada registrador usa quatro flip-flops D. Um multiplexador por bit escolhe entre o dado externo e a própria saída do flip-flop. Com `LOAD = 1`, a entrada é carregada na borda de subida do clock; com `LOAD = 0`, a realimentação mantém o valor. A Figura 5 mostra o clear assíncrono da versão inicial. Na versão corrigida, os presets e clears físicos dos flip-flops ficam inativos; uma porta AND por bit aplica o reset ao próximo dado. A entrada CLR do bloco passa a ser síncrona e ativa em nível alto. Esse comportamento também permite executar RST sem criar um laço de reset assíncrono.
 
 ## 5. Unidade lógica e aritmética
 
@@ -66,7 +67,7 @@ Cada registrador usa quatro flip-flops D. Um multiplexador por bit escolhe entre
 
 A ULA recebe dois operandos de 4 bits e calcula, em blocos separados, soma, subtração, multiplicação e divisão. O multiplexador `ula_mux` escolhe o resultado encaminhado à saída de 4 bits.
 
-Há uma divergência entre a ligação apresentada no esquema e a codificação emitida pela unidade de controle:
+Na versão inicial da Figura 6, havia uma divergência entre a ligação do multiplexador e a unidade de controle. A tabela registra o problema encontrado:
 
 
 | Select | Operação solicitada por UC.v | Entrada selecionada no esquema da ULA |
@@ -76,7 +77,7 @@ Há uma divergência entre a ligação apresentada no esquema e a codificação 
 | 10     | Multiplicação                | Subtração (`data2x`)                |
 | 11     | Divisão                       | Soma (`data3x`)                       |
 
-O módulo gerado `ula_mux.v` utiliza a seleção convencional das entradas de um LPM_MUX. Portanto, a ordem das entradas deve ser compatibilizada com `AluSelect` antes de considerar as instruções aritméticas funcionalmente validadas.
+O módulo gerado `ula_mux.v` utiliza a seleção convencional das entradas de um LPM_MUX. Na versão corrigida, as entradas foram reordenadas: data0x = Add, data1x = Sub, data2x = Mul e data3x = Div. Os dois multiplexadores de leitura do banco também foram reordenados para que os índices 0, 1, 2 e 3 correspondam a R0, R1, R2 e R3. Os barramentos RESA e RESB receberam os intervalos explícitos [3..0].
 
 ### 5.1. Somador de quatro bits
 
@@ -97,9 +98,9 @@ Para os operandos A e B e o carry de entrada Cin, o somador completo implementa:
 
 ### 5.2. Demais operações e limites
 
-Os arquivos `ULA/subtractor/sub1.bdf` e `sub4.bdf` implementam a subtração hierarquicamente. Multiplicação e divisão são descritas nos esquemas `ULA/multiplicador/mul2.bdf` e `ULA/divisor/div.bdf`. Todos apresentam interfaces externas de quatro bits.
+Os arquivos `ULA/subtractor/sub1.bdf` e `sub4.bdf` implementam a subtração hierarquicamente. Multiplicação e divisão são descritas nos esquemas `ULA/multiplicador/mul2.bdf` e `ULA/divisor/div.bdf`. Apesar das interfaces de quatro bits, os circuitos iniciais usavam apenas A[1..0] e B[1..0]. Ambos foram reconstruídos com portas lógicas para operar sobre os quatro bits. O multiplicador soma os produtos parciais de peso inferior a 16. O divisor usa quatro estágios de divisão restauradora, com resto temporário de cinco bits.
 
-Os dados são tratados como valores sem sinal, entre 0 e 15. A largura do caminho de dados não permite armazenar resultados maiores que quatro bits e não há flags arquiteturais de carry ou overflow na unidade de controle. A divisão por zero e o comportamento dos blocos de multiplicação e divisão nos casos extremos precisam ser verificados por simulação; não há evidência experimental desses casos no material do relatório.
+Os dados são tratados como valores sem sinal, entre 0 e 15. A largura do caminho de dados não permite armazenar resultados maiores que quatro bits e não há flags arquiteturais de carry ou overflow na unidade de controle. Foi definido que a divisão por zero retorna 0. A subtração e o produto são armazenados módulo 16. Todas as 256 combinações de operandos de cada uma das quatro operações foram verificadas em simulação, incluindo os 16 divisores nulos.
 
 ## 6. Unidade de controle e formato das instruções
 
@@ -142,7 +143,7 @@ As instruções avançadas JZ, CMP e JE mencionadas no enunciado não estão imp
 
 ## 7. Memória e programa de exemplo
 
-A ROM possui 64 endereços e palavras de 16 bits, totalizando 1.024 bits de conteúdo lógico. Em `ROM/rom.bdf`, o parâmetro `LPM_FILE` referencia `microcpu_teste.mif`, presente na pasta ROM. O endereço está configurado como não registrado e a saída como registrada, com `outclock` ligado ao clock externo. Essa configuração introduz uma etapa de registro na busca; a execução não deve ser interpretada como uma busca combinacional sem latência.
+A ROM possui 64 endereços e palavras de 16 bits, totalizando 1.024 bits de conteúdo lógico. Em `ROM/rom.bdf`, o parâmetro `LPM_FILE` referencia `microcpu_teste.mif`, presente na pasta ROM. O endereço está configurado como registrado e a saída como não registrada, usando inclock. O clock da ROM é o inverso do clock externo. Ao pressionar KEY1, a borda de descida captura o endereço na ROM; ao soltar KEY1, a borda de subida grava o resultado e atualiza o contador. Assim, cada ciclo completo do botão executa uma instrução.
 
 O arquivo `ROM/Mif.mif` também existe, mas não é o arquivo referenciado pelo parâmetro atual da ROM.
 
@@ -156,8 +157,16 @@ O arquivo `ROM/Mif.mif` também existe, mas não é o arquivo referenciado pelo 
 | 04                    | A004                | JMP 04                  | Retorno ao endereço 04 |
 | 05 a 3F               | F000                | Opcode reservado        | Nenhuma escrita         |
 
-Essa sequência pretende deixar R0 = 5, R1 = 3, R2 = 8 e R3 = 6, mantendo os valores em um laço. Esses são resultados esperados pela interpretação das instruções, não medições do circuito. A divergência na ULA, os avisos de conexão e a sincronização entre ROM, contador e escrita impedem afirmar que o hardware atual produz essa sequência corretamente.
+Essa sequência foi executada em simulação e deixou R0 = 5, R1 = 3, R2 = 8 e R3 = 6. Quatro ciclos adicionais confirmaram a manutenção dos conteúdos e do contador no endereço 04. Ainda não foi realizada uma medição na placa.
 
-## 8. Conclusão
+durante a execução
+![1793303115146](images/report/1793303115146.png)
 
-O projeto reúne os principais elementos de uma CPU didática: memória de programa, contador com salto, unidade de controle, banco com duas portas de leitura, ULA e visualização dos registradores. A organização hierárquica permite relacionar os circuitos elementares, como o somador completo e o registrador de quatro bits, ao caminho de dados integrado.
+![1793303131426](images/report/1793303131426.png)
+
+## 8. Operação manual
+
+
+Os pinos definidos no projeto correspondem aos botões da DE0-CV: CLK em W9 (KEY1) e BRST em U7 (KEY0). Os botões são ativos em nível baixo e possuem tratamento de repique por circuito Schmitt Trigger.
+
+Para inicializar, mantenha KEY0 pressionado e faça um ciclo completo de pressionar e soltar KEY1. Solte KEY0. Cada novo ciclo de KEY1 executa uma instrução, com atualização dos displays na soltura. O resultado esperado após as primeiras quatro instruções é R0 = 5, R1 = 3, R2 = 8 e R3 = 6; o salto seguinte mantém esses valores.

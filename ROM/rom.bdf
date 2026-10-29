@@ -85,7 +85,6 @@ on the Quartus Prime software download page.
 		(text "inclock" (rect 20 33 58 45)(font "Arial" (font_size 8)))
 		(text "inclock" (rect 20 33 58 45)(font "Arial" (font_size 8)))
 		(line (pt 0 40)(pt 16 40))
-		(unused)
 	)
 	(port
 		(pt 0 72)
@@ -93,7 +92,6 @@ on the Quartus Prime software download page.
 		(text "memenab" (rect 20 65 74 77)(font "Arial" (font_size 8)))
 		(text "memenab" (rect 20 65 74 77)(font "Arial" (font_size 8)))
 		(line (pt 0 72)(pt 16 72))
-		(unused)
 	)
 	(port
 		(pt 0 56)
@@ -101,6 +99,7 @@ on the Quartus Prime software download page.
 		(text "outclock" (rect 20 49 67 61)(font "Arial" (font_size 8)))
 		(text "outclock" (rect 20 49 67 61)(font "Arial" (font_size 8)))
 		(line (pt 0 56)(pt 16 56))
+		(unused)
 	)
 	(port
 		(pt 112 48)
@@ -111,13 +110,13 @@ on the Quartus Prime software download page.
 	)
 	(parameter
 		"LPM_ADDRESS_CONTROL"
-		"\"UNREGISTERED\""
+		"\"REGISTERED\""
 		"Should the address and control ports be registered?"
 		"\"REGISTERED\"" "\"UNREGISTERED\"" 
 	)
 	(parameter
 		"LPM_FILE"
-		"microcpu_teste.mif"
+		"\"ROM/microcpu_teste.mif\""
 		"File containing initial contents of memory array"
 	)
 	(parameter
@@ -127,7 +126,7 @@ on the Quartus Prime software download page.
 	)
 	(parameter
 		"LPM_OUTDATA"
-		"\"REGISTERED\""
+		"\"UNREGISTERED\""
 		"Should the output data be registered?"
 		"\"REGISTERED\"" "\"UNREGISTERED\"" 
 	)
@@ -151,17 +150,49 @@ on the Quartus Prime software download page.
 	)
 	(annotation_block (parameter)(rect 568 96 841 194))
 )
+(symbol
+	(rect 336 288 368 304)
+	(text "VCC" (rect 7 7 27 16)(font "Arial" (font_size 6)))
+	(text "rom_enable_source" (rect 3 -1 97 11)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 19 7 24 18)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 -2 24 9)(font "Courier New" (bold))(invisible))
+		(line (pt 16 0)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+	(flipx)
+)
 (connector
 	(pt 456 224)
 	(pt 416 224)
 	(bus)
 )
 (connector
-	(pt 456 256)
-	(pt 416 256)
+	(pt 456 240)
+	(pt 432 240)
 )
 (connector
 	(pt 648 248)
 	(pt 568 248)
 	(bus)
+)
+(connector
+	(pt 432 240)
+	(pt 432 256)
+)
+(connector
+	(pt 432 256)
+	(pt 416 256)
+)
+(connector
+	(pt 456 272)
+	(pt 352 272)
+)
+(connector
+	(pt 352 272)
+	(pt 352 288)
 )
