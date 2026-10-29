@@ -213,31 +213,6 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 336 128 384 160)
-	(text "NOT" (rect 1 0 21 9)(font "Arial" (font_size 6)))
-	(text "inst3" (rect 3 21 25 33)(font "Intel Clear" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 18)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 18)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 18)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 18)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
 	(rect 552 240 632 320)
 	(text "mux2" (rect 25 0 62 15)(font "Arial" (font_size 10)))
 	(text "inst11" (rect 8 66 36 78)(font "Intel Clear" ))
@@ -574,15 +549,6 @@ on the Quartus Prime software download page.
 	)
 )
 (connector
-	(pt 328 144)
-	(pt 336 144)
-)
-(connector
-	(text "CLRI" (rect 384 128 406 140)(font "Intel Clear" ))
-	(pt 408 144)
-	(pt 384 144)
-)
-(connector
 	(text "CLK" (rect 706 128 726 140)(font "Intel Clear" ))
 	(pt 728 144)
 	(pt 696 144)
@@ -755,4 +721,9 @@ on the Quartus Prime software download page.
 	(pt 368 96)
 	(pt 328 96)
 	(bus)
+)
+(connector
+	(text "CLRI" (rect 384 128 406 140)(font "Intel Clear" ))
+	(pt 328 144)
+	(pt 408 144)
 )

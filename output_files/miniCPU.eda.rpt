@@ -1,5 +1,5 @@
 EDA Netlist Writer report for miniCPU
-Thu Oct 15 17:52:50 2026
+Thu Oct 29 15:18:16 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 15 17:52:50 2026 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 29 15:18:16 2026 ;
 ; Revision Name             ; miniCPU                               ;
 ; Top-level Entity Name     ; miniCPU                               ;
 ; Family                    ; Cyclone V                             ;
@@ -81,15 +81,15 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 15 17:52:50 2026
+    Info: Processing started: Thu Oct 29 15:18:16 2026
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off miniCPU -c miniCPU
 Warning (125092): Tcl Script File mux2.qip not found
     Info (125063): set_global_assignment -name QIP_FILE mux2.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file miniCPU.vo in folder "C:/Users/12543930/Documents/GitHub/SSC0108---Pr-tica-em-Sistemas-Digitais-/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4739 megabytes
-    Info: Processing ended: Thu Oct 15 17:52:50 2026
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Thu Oct 29 15:18:16 2026
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
